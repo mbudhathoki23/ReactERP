@@ -30,7 +30,7 @@ const NavsBars = () => {
                   Produts
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li >
+                  <li>
                     <a class="dropdown-item" href="#">
                       Action
                     </a>
@@ -125,7 +125,6 @@ const NavsBars = () => {
                   id="dropdownMenuButton1"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-
                 >
                   Services
                 </button>

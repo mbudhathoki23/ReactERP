@@ -72,7 +72,6 @@ ul li {
 .coloring{
     color: white;
 }
-
 `
 
 export default Wrapper
