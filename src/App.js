@@ -1,5 +1,5 @@
 import NavsBars from "./components/NavsBars";
-import SideNavigation from "./components/softwares/payroll/SideNavigation";
+import SideNavigation from "./components/softwares/dashbord/SideNavigation";
 
 
 function App() {

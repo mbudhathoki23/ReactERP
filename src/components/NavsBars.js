@@ -4,7 +4,7 @@ import Wrapper from '../assest/wrappers/NavsBarsPage'
 const NavsBars = () => {
   return (
     <Wrapper>
-    <div className='container'>
+    <div className='Container'>
      <div className='secondCOn'>
   hfhf
       <div>
