@@ -6,7 +6,6 @@ const Wrapper = styled.nav`
     height : 10vh;
     border : 1px solid red;
 }
-
 `
 
 export default Wrapper
