@@ -1,9 +1,10 @@
+import NavsBars from "./components/NavsBars";
 
 
 function App() {
   return (
     <div>
-       <h4>HELLO</h4>
+    <NavsBars />
     </div>
   );
 }
