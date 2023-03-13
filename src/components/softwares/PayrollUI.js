@@ -5,9 +5,11 @@ const PayrollUI = () => {
     <>
         <div className='payroll-section'>
             <div className='container'>
-                <div className='postion-relative'>
-                    <div className='position-absolute top-0 bottom-0 start-0 end-0'>
+                <div className='row'>
+                    <div className='col'>
                         <div className='text-center h3'>Payroll done right, so you can focus on your business.</div>
+                        <div className='text-center h1'>The Best And Most User Friendly HR Management Software.</div>
+                        <div className='text-center h6 text-muted'></div>
                     </div>
                 </div>
             </div>
