@@ -1,12 +1,13 @@
 import NavsBars from "./components/NavsBars";
-import SideNavigation from "./components/softwares/dashbord/SideNavigation";
+import PayrollUI from "./components/softwares/PayrollUI"
+
 
 
 function App() {
   return (
     <div>
       <NavsBars />
-      <SideNavigation />
+      <PayrollUI/>
     </div>
   );
 }

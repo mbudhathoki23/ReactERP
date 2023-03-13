@@ -6,7 +6,6 @@ const NavsBars = () => {
     <Wrapper>
     <div className='Container'>
      <div className='secondCOn'>
-  hfhf
       <div>
           
       </div>
