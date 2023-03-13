@@ -1,9 +1,27 @@
 import React from 'react'
+import Wrapper from '../assest/wrappers/NavsBarsPage'
 
 const NavsBars = () => {
   return (
-    <div className=''>
+    <Wrapper>
+    <div className='container'>
+     <div className='secondCOn'>
+  hfhf
+      <div>
+          
+      </div>
+
+
+   
+
+
+      <div>
+
+      </div>
+
+     </div>
     </div>
+    </Wrapper>
   )
 }
 
