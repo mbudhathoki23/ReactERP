@@ -1,21 +1,16 @@
-
-import NavsBars from "./components/NavsBars";
-
-import OurServices from "./components/OurServices";
-
+// import NavsBars from "./components/NavsBars";
+// import OurServices from "./components/OurServices";
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 import "./index.css";
-
-
-import './index.css';
-
 
 function App() {
   return (
     <div>
-
-         <NavsBars />
-        <OurServices/>
-      
+      {/* <NavsBars /> */}
+      {/* <OurServices /> */}
+      <AboutUs />
+      <ContactUs />
     </div>
   );
 }
