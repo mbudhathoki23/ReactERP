@@ -18,7 +18,7 @@ import ContactUsImg from "../assest/images/Contact-us.png";
 const ContactUs = () => {
   return (
     <Wrapper>
-      <Box className="contact-us-section" sx={{ p: 5 }}>
+      <Box className="contact-us-section" sx={{ py: 5 }}>
         <Container>
           <Typography variant="h3" sx={{ mb: 1 }}>
             Contact Us

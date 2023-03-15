@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 const AboutUsWrapper = styled.section`
-  .img-container {
+  .about-us-section {
+    background-color: var(--primary--200);
   }
-  img.contact-us-image {
-    transform: scaleX(-1);
+  .img-container {
+    width: 100%;
+    height: 500px;
   }
 `;
 
