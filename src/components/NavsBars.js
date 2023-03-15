@@ -1,133 +1,114 @@
-import React from "react";
+import * as React from "react";
 import Wrapper from "../assest/wrappers/NavsBarsPage";
 import Mrsolution from "../assest/images/MrSolution.png";
-import { Link } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
+import { Typography } from "@mui/material";
 
 const NavsBars = () => {
   return (
     <Wrapper>
-      <div className="Container">
-        <div className="secondCOn">
-          <div className="imgsolution">
-            <img src={Mrsolution} className="doingimg"></img>
-
-            <div className="titlingf">
-              <h4>M AND R SOLUTION </h4>
-              <p style={{ fontSize: 12 }}>Putalisadak, kathmandu</p>
+      <div>
+        <div className="Container">
+          <div className="secondCOn">
+            <div className="imgsolution">
+              <img src={Mrsolution} className="doingimg" />
+              <div className="titlingf">
+                <Typography
+                  sx={{ p: 0, m: 0 }}
+                  fontWeight={400}
+                  fontSize={25.008}
+                >
+                  M AND R SOLUTION
+                </Typography>
+                <Typography fontSize={12}>Putalisadak, kathmandu</Typography>
+              </div>
             </div>
-          </div>
 
-          <div className="imgsolutioning">
-            <div className="listing listinging ">
-              <div class="dropdown">
-                <button
-                  class="btn btn-link dropdown-toggle text-light text-decoration-none"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Produts
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
+            <div className="imgsolutioning">
+              <div className="listing listinging ">
+                <Dropdown>
+                  <Dropdown.Toggle
+                    variant="link"
+                    id="dropdown-basic"
+                    className="reactdrop"
+                  >
+                    Produts
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
                       Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
 
-              <div class="dropdown ">
-                <button
-                  class="btn btn-link dropdown-toggle text-light text-decoration-none"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
+                <Dropdown>
+                  <Dropdown.Toggle
+                    variant="link"
+                    id="dropdown-basic"
+                    className="reactdrop"
+                  >
+                    Services
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
                       Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
 
-              <div class="dropdown">
-                <button
-                  class="btn btn-link text-light text-decoration-none"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Pricing
-                </button>
-              </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-link reactdrop"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pricing
+                  </button>
+                </div>
 
-              <div class="dropdown">
-                <button
-                  class="btn btn-link dropdown-toggle text-light text-decoration-none"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Company
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item " href="#">
+                <Dropdown>
+                  <Dropdown.Toggle
+                    variant="link"
+                    id="dropdown-basic"
+                    className="reactdrop"
+                  >
+                    Company
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">
                       Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">
+                      Something else
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
 
-              <div class="dropdown">
-                <button
-                  class="btn btn-link text-light text-decoration-none"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </button>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-link reactdrop"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </button>
+                </div>
               </div>
             </div>
           </div>

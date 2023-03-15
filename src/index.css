@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Bookman Old Style', sans-serif !important;
 }
 
 @import url('https://fonts.cdnfonts.com/css/bookman-old-style');
@@ -22,7 +23,7 @@
    --primary--600 : #7c3aed;
    --primary--700 : #6d28d9;
    --primary--800 : #5b21b6;
-   --primary--100 : #4c1d95;
+   --primary--900 : #4c1d95;
 
 
   /* box shawdoing color */
@@ -51,8 +52,7 @@ body {
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Bookman Old Style', sans-serif;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: 1.3;
 }
 
