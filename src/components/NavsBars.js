@@ -1,12 +1,12 @@
 import * as React from "react";
 import Wrapper from "../assest/wrappers/NavsBarsPage";
 import Mrsolution from "../assest/images/MrSolution.png";
-<<<<<<< HEAD
+
 import Dropdown from "react-bootstrap/Dropdown";
 import { Typography } from "@mui/material";
-=======
 
->>>>>>> 223a8b95526bd9a23b23f4e23b088974b13d6b9a
+
+
 
 const NavsBars = () => {
   return (
