@@ -2,14 +2,14 @@ import { Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import AboutUsWrapper from "../assest/wrappers/AboutUsWrapper";
-import TeamImg from "../assest/images/Contact-us.png";
+import TeamImg from "../assest/images/team.png";
 
 const AboutUs = () => {
   return (
     <AboutUsWrapper>
-      <Box className="about-us-section" sx={{ py: 5 }}>
+      <Box className="about-us-section" sx={{ my: 0 }}>
         <Container>
-          <Grid container>
+          <Grid container columnSpacing={3}>
             <Grid item xs={12} sm={6}>
               <Box
                 className="img-container"
@@ -19,11 +19,9 @@ const AboutUs = () => {
                   backgroundSize: "contain",
                   backgroundRepeat: "no-repeat",
                 }}
-              >
-                {/* <img src={TeamImg} className=''/> */}
-              </Box>
+              ></Box>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} sx={{ pt: 8 }}>
               <Box>
                 <Box sx={{ mb: 3 }}>
                   <Typography fontWeight={800} fontSize={52}>
@@ -39,14 +37,18 @@ const AboutUs = () => {
                 </Box>
                 <Grid container spacing={3}>
                   <Grid item sm={6}>
-                    <Typography variant="h5">Who we are</Typography>
+                    <Typography fontWeight={800} fontSize={24}>
+                      Who we are
+                    </Typography>
                     <Typography variant="body2">
                       There are many vtions of passages of Lorem Ipsum
                       available, but the majority have suffered.
                     </Typography>
                   </Grid>
                   <Grid item sm={6}>
-                    <Typography variant="h5">Who we are</Typography>
+                    <Typography fontWeight={800} fontSize={24}>
+                      Who we are
+                    </Typography>
                     <Typography variant="body2">
                       There are many vtions of passages of Lorem Ipsum
                       available, but the majority have suffered.

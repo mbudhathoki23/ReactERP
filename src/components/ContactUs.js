@@ -37,7 +37,6 @@ const ContactUs = () => {
                       label="Name"
                       fullWidth
                       required
-                      color="secondary"
                       id="fullName"
                       helperText="Enter full name."
                     />
@@ -47,7 +46,6 @@ const ContactUs = () => {
                       variant="outlined"
                       label="Email"
                       fullWidth
-                      color="secondary"
                       required
                       id="customerEmail"
                     />
@@ -56,7 +54,6 @@ const ContactUs = () => {
                     <TextField
                       variant="outlined"
                       label="Phone Number"
-                      color="secondary"
                       fullWidth
                       id="phoneNumber"
                     />
@@ -66,7 +63,6 @@ const ContactUs = () => {
                       variant="outlined"
                       label="Subject"
                       fullWidth
-                      color="secondary"
                       required
                       id="messageSubject"
                     />
@@ -77,8 +73,7 @@ const ContactUs = () => {
                       required
                       fullWidth
                       label="Message"
-                      helperText="Enter message."
-                      color="secondary"
+                      helperText="Enter your message here."
                       multiline
                       minRows={4}
                     />

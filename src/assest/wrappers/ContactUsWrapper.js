@@ -24,6 +24,17 @@ const Wrapper = styled.nav`
   img.contact-us-image {
     transform: scaleX(-1);
   }
+
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: white;
+  }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: white;
+  }
+  .MuiInputLabel-root.Mui-focused {
+    color: black;
+    font-size: 18px;
+  }
 `;
 
 export default Wrapper;
