@@ -25,7 +25,9 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-spring-carousel": "^2.0.19",
+    "react-tsparticles": "^2.9.3",
     "styled-components": "^5.3.8",
+    "tsparticles": "^2.9.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
