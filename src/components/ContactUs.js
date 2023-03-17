@@ -1,12 +1,12 @@
 import {
   Grid,
   Container,
-  FormControl,
-  InputLabel,
-  Input,
+  // FormControl,
+  // InputLabel,
+  // Input,
   TextField,
   Button,
-  IconButton,
+  // IconButton,
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
@@ -92,7 +92,7 @@ const ContactUs = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <Box className="img-container">
-                <img src={ContactUsImg} className="contact-us-image" />
+                <img src={ContactUsImg} className="contact-us-image" alt="contact us svg element"/>
               </Box>
             </Grid>
           </Grid>

@@ -3,9 +3,7 @@ import { Box, Container } from "@mui/system";
 import React from "react";
 import HeroWrapper from "../assest/wrappers/HeroWrapper";
 import HeroImg from "../assest/images/HeroSection.jpg";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import ContactPageSharpIcon from "@mui/icons-material/ContactPageSharp";
+import Particle from "./configs/Particle";
 
 const Hero = () => {
   const heroSectionContents = {
@@ -13,87 +11,12 @@ const Hero = () => {
     description:
       "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.",
   };
-  const particlesInit = async (main) => {
-    console.log(main);
-    await loadFull(main);
-  };
 
   return (
     <HeroWrapper>
+      <Particle />
       <Box className="hero-section-container">
         <Container className="hero-section">
-          <Particles
-            id="hero-section-particle"
-            init={particlesInit}
-            options={{
-              fpsLimit: 120,
-              interactivity: {
-                events: {
-                  onClick: {
-                    enable: true,
-                    mode: "push",
-                  },
-                  onHover: {
-                    enable: true,
-                    mode: "repulse",
-                  },
-                  resize: true,
-                },
-                modes: {
-                  push: {
-                    quantity: 4,
-                  },
-                  repulse: {
-                    distance: 200,
-                    duration: 0.4,
-                  },
-                },
-              },
-              particles: {
-                color: {
-                  value: "#a78bfa",
-                  opacity: 0.5,
-                },
-                links: {
-                  color: "#a78bfa",
-                  distance: 150,
-                  enable: true,
-                  opacity: 0.5,
-                  width: 1,
-                },
-                collisions: {
-                  enable: true,
-                },
-                move: {
-                  direction: "none",
-                  enable: true,
-                  outModes: {
-                    default: "bounce",
-                  },
-                  random: false,
-                  speed: 1,
-                  straight: false,
-                },
-                number: {
-                  density: {
-                    enable: true,
-                    area: 800,
-                  },
-                  value: 80,
-                },
-                opacity: {
-                  value: 0.5,
-                },
-                shape: {
-                  type: "circle",
-                },
-                size: {
-                  value: { min: 1, max: 5 },
-                },
-              },
-              detectRetina: true,
-            }}
-          />
           <Grid
             container
             justifyContent="center"
