@@ -1,6 +1,8 @@
 
-import NavsBars from "./components/NavsBars";
 
+import Footer from "./components/Footer";
+import NavBars from "./components/NavBars";
+import OurPortfolio from "./components/OurPortfolio";
 import OurServices from "./components/OurServices";
 
 import "./index.css";
@@ -12,10 +14,9 @@ import './index.css';
 function App() {
   return (
     <div>
-
-         <NavsBars />
-        <OurServices/>
-      
+    <NavBars />
+    <OurServices  />
+       <Footer />
     </div>
   );
 }

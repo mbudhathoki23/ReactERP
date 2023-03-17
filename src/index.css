@@ -37,6 +37,19 @@
     --gray--800 : #1f2937;
     --gray--100 : #111827;
 
+
+ /*for footer*/
+ --white:#FFF;
+ --black:#000;
+ --dark:#1E1E1E;
+ --gray:rgba(1,1,1,0.6);
+ --lite:rgba(255,255,255,0.6);
+ --primary:#002347;
+ --secondary:#fdc632;
+
+
+
+
 }
 
 html {font-size: 100%;} /*16px*/
@@ -85,3 +98,4 @@ li{
   margin: 0;
   padding: 0;
 }
+
