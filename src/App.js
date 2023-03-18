@@ -1,5 +1,5 @@
-
 import ComingSoon from "./components/ComingSoon";
+
 import "./index.css";
 
 function App() {

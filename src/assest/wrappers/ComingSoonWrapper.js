@@ -14,19 +14,17 @@ const ComingSoonWrapper = styled.section`
   .coming-soon-section {
     height: 100vh;
     background-color: var(--primary--200);
-    background-size: 300px 300px;
-    background-position: 25% 15%;
   }
-  @media (max-width:600px) {
-    .coming-soon-section {
-      height: 100vh;
-      background-size: 100px 100px;
-      background-position: 100% 5%;
-    }
+
+  .coming-soon-logo-img {
+    height: 500px;
+    width: 500px;
+    background-size: contain;
   }
   .grid-container {
     height: 100vh;
     width: 100%;
+    position: relative;
   }
   .coming-soon-mail,
   .coming-soon-phone-number {
@@ -45,19 +43,16 @@ const ComingSoonWrapper = styled.section`
   .features-offered-title {
     font-size: 42px;
     font-weight: 600;
-    /* color: var(--primary--600); */
     text-shadow: 0px 0px 10px var(--primary--300);
   }
   .software-list {
     font-size: 20px;
-    /* font-weight: 600; */
-    color: var(--primary--500);
+    font-weight: 600;
   }
   .features-offered {
     font-size: 24px;
     font-weight: 700;
-    color: var(--primary--500);
-    transition: all 0.25s ease-in-out 0.25s;
+    transition: all 0.5ms ease-in-out 0.5ms;
   }
   .features-offered:hover {
     cursor: pointer;
@@ -69,6 +64,65 @@ const ComingSoonWrapper = styled.section`
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 11px var(--primary--400);
+    position: relative;
+  }
+  .card-img {
+    position: absolute;
+    /* z-index:-1; */
+    width: 300px;
+    height: 300px;
+    opacity: 0.25;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .card-texts {
+    position: relative;
+    /* z-index: 1; */
+  }
+  .card-box {
+    position: relative;
+    /* z-index: 1; */
+  }
+  .css-1402ce4-MuiGrid-root > .MuiGrid-item {
+    padding: 0;
+  }
+
+  .counter-box {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+
+  .icons-display{
+    color: var(--primary--800);
+    padding-right:5px ;
+  }
+
+  @media (max-width: 600px) {
+rd-box {
+      width: 100%;
+    }
+    .features-offered-title {
+      font-size: 28px;
+    }
+    .coming-soon-logo-img{
+      height: 100px;
+    }
+
+  }
+  @media (min-width: 600) and (max-width: 786px){
+    .coming-soon-logo-img{
+      height: 200px;
+    }
+  }
+  @media screen {
+    .custom-card {
+      margin-left: 10px;
+      height: fit-content;
+    }
   }
 `;
 
