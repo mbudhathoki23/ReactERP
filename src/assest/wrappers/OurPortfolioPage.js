@@ -2,21 +2,20 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
 
-.my-carousels .carousel-item {
-  position: relative;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
+.carosel{
+ border : 1px solid red;
 }
 
-.my-carousels .carousel-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 3rem;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+.carouselitem{
+  border: 1px solid black;
+  height: 500px;
+  background-image : url('https://cdn.pixabay.com/photo/2023/03/11/14/39/flower-7844597__340.jpg');
+  margin : 1rem;
+}
+
+.whynot{
+  border: 1px solid red;
+  /* width : 10px; */
 }
 
 `
