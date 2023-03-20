@@ -3,6 +3,8 @@ import styled from "styled-components";
 const HeroWrapper = styled.section`
   .hero-section-container {
     background-color: var(--primary--200);
+    width: 100vw;
+    height: 100vh;
   }
 
   .title {
@@ -13,14 +15,9 @@ const HeroWrapper = styled.section`
     text-shadow: 0px 0px 10px var(--primary--300);
   }
   .description {
-    color: var(--gray--500);
-  }
-  canvas {
-    height: 100vh;
-    width: 100vw;
+    color: var(--primary--600);
   }
   .hero-section {
-    height: 100vh;
     width: 100%;
     position: relative;
   }
@@ -44,11 +41,22 @@ const HeroWrapper = styled.section`
     padding: 0;
   }
 
-  .button-contact-us {
-    background-color: var(--primary--800);
+  /*  */
+  .demo-button,
+  .download-button {
+    color: var(--primary--800);
+    border: 1px solid var(--primary--600);
   }
-  .button-contact-us:hover {
-    background-color: white;
+  .download-button {
+    background-color: var(--primary--600);
+    color: white;
+  }
+  .demo-button:hover {
+    border: 1px solid var(--primary--800);
+  }
+  .download-button:hover {
+    border: 1px solid var(--primary--400);
+    background-color: var(--primary--400);
     color: var(--primary--800);
   }
 `;

@@ -68,7 +68,7 @@ const ComingSoon = () => {
 
   return (
     <ComingSoonWrapper>
-      <Particles />
+      {/* <Particles /> */}
       <Box className="coming-soon-section">
         <Container disableGutters maxWidth="xxl" fixed>
           <Grid

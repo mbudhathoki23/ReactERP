@@ -2,14 +2,10 @@ import styled from 'styled-components'
 
 const Wrapper = styled.nav`
 
-.showBorder{
-    /* border: 1px solid red; */
-}
-
 .maindoing{
     /* border: 1px solid green; */
-    /* background-color: var(--primary--200); */
-    background-color: #e0e7ff;
+    background-color: var(--primary--400);
+    /* background-color: #e0e7ff; */
     color : black;
     box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
   transition: box-shadow 0.3s ease-in-out;

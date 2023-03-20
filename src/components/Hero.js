@@ -3,7 +3,7 @@ import { Box, Container } from "@mui/system";
 import React from "react";
 import HeroWrapper from "../assest/wrappers/HeroWrapper";
 import HeroImg from "../assest/images/HeroSection.jpg";
-import Particle from "./configs/Particle";
+// import Particle from "./configs/particles/Particle";
 
 const Hero = () => {
   const heroSectionContents = {
@@ -14,9 +14,9 @@ const Hero = () => {
 
   return (
     <HeroWrapper>
-      <Particle />
+      {/* <Particle /> */}
       <Box className="hero-section-container">
-        <Container className="hero-section">
+        <Container className="hero-section" maxWidth="xl" fixed>
           <Grid
             container
             justifyContent="center"
