@@ -2,9 +2,10 @@ import React from "react";
 import Wrapper from "../assest/wrappers/OurPortfolioPage";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Typography, Container, Grid } from "@mui/material";
+import { Typography, Container, Grid, Link } from "@mui/material";
 import { Box } from "@mui/system";
-import PortFolio from "../details/Portfolio";
+import PortFolio from "../details/PortfolioDetails";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const OurPortfolio = () => {
   const responsiveCarousel = {
@@ -51,12 +52,21 @@ const OurPortfolio = () => {
             <Grid item sm={12}>
               <Typography
                 fontSize={24}
-                variant="overline"
+                // variant="overline"
                 align="center"
+                fontStyle="italic"
                 gutterBottom={false}
                 fontWeight={600}
+                color="#9a65fe"
               >
                 <a href={`mailto:${email}`}>{email}</a>
+              </Typography>
+            </Grid>
+            <Grid item sm={12}>
+              <Typography>
+                <Link href="facebook.com">
+                  <FacebookIcon className="portfolio-icon" />
+                </Link>
               </Typography>
             </Grid>
           </Grid>
@@ -89,15 +99,22 @@ const OurPortfolio = () => {
           <Carousel
             responsive={responsiveCarousel}
             showDots={false}
-            infinite={true}
+            infinite
             arrows={false}
             autoPlay={true}
             autoPlaySpeed={7000}
             partialVisbile={true}
-            customTransition="all linear 3s"
+            customTransition="all 2s ease-in-out"
+            draggable
+            focusOnSelect={true}
             slidesToSlide={1}
-            shouldResetAutoplay={true}
+            pauseOnHover
+            shouldResetAutoplay
+            minimumTouchDrag={80}
             rtl={false}
+            containerClass="portfolio-container"
+            rewind={false}
+            rewindWithAnimation={false}
           >
             {portfolioDisplay}
           </Carousel>

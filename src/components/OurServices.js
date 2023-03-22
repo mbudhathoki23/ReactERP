@@ -57,11 +57,12 @@ const OurServices = () => {
                       backgroundColor: "white",
                       borderRadius: 10,
                     }}
+                    className="our-services-box"
                   >
                     <Grid container className="containg cmargin ">
                       <Container
                         fixed
-                        className="our-services-box"
+                        className=""
                         sx={{ borderRadius: 10 }}
                       >
                         <Grid item sm={12} sx={{ my: 2 }}>

@@ -12,8 +12,9 @@ const Wrapper = styled.section`
   .our-portfolio-section {
     background-color: var(--primary--200);
   }
+
   .carousel_item {
-    height: 700px;
+    min-height:calc(100vh - 300px);
     margin: 1rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,19 +43,19 @@ const Wrapper = styled.section`
     left: 0;
     background: rgb(91, 33, 182);
     background: -moz-linear-gradient(
-      90deg,
-      rgba(91, 33, 182, 1) 0%,
-      rgba(139, 92, 246, 1) 42%,
-      rgba(237, 233, 254, 1) 100%
+      180deg,
+      rgba(91, 33, 182, 0.5) 0%,
+      rgba(139, 92, 246, 0.5) 42%,
+      rgba(237, 233, 254, 0.5) 100%
     );
     background: -webkit-linear-gradient(
-      90deg,
-      rgba(91, 33, 182, 1) 0%,
-      rgba(139, 92, 246, 1) 42%,
-      rgba(237, 233, 254, 1) 100%
+      180deg,
+      rgba(91, 33, 182, 0.5) 0%,
+      rgba(139, 92, 246, 0.5) 42%,
+      rgba(237, 233, 254, 0.5) 100%
     );
     background: linear-gradient(
-      90deg,
+      180deg,
       rgba(91, 33, 182, 0.5) 0%,
       rgba(139, 92, 246, 0.5) 42%,
       rgba(237, 233, 254, 0.5) 100%
@@ -72,6 +73,11 @@ const Wrapper = styled.section`
     position: relative;
     z-index: 5;
     text-align: center;
+  }
+
+  .portfolio-icon{
+    font-size: 38px;
+    color: var(--primary--300);
   }
 `;
 export default Wrapper;

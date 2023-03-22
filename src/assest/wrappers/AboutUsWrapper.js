@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const AboutUsWrapper = styled.section`
   .about-us-section {
     background-color: var(--primary--200);

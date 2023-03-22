@@ -1,4 +1,4 @@
-import { Card, Grid, Typography } from "@mui/material";
+import { Card, Grid, Link, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import ComingSoonWrapper from "../assest/wrappers/ComingSoonWrapper";
@@ -7,14 +7,8 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MrSolution from "../assest/images/MrSolution.png";
 import Particles from "./configs/particles/Particle";
 import Counter from "./configs/counter/Counter";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
-import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
-import LoyaltyIcon from "@mui/icons-material/Loyalty";
-import DiamondIcon from "@mui/icons-material/Diamond";
-import RestaurantIcon from "@mui/icons-material/Restaurant";
-import CheckroomIcon from "@mui/icons-material/Checkroom";
-import StorefrontIcon from "@mui/icons-material/Storefront";
-import ChairAltIcon from "@mui/icons-material/ChairAlt";
+import { featuresOffered, softwares } from "../details/FeaturesOffered";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const ComingSoon = () => {
   // company details
@@ -22,42 +16,25 @@ const ComingSoon = () => {
     mail: "info@mrsolution.com.np",
     phone: "(+977) 1-4430676 / 4438465",
     alternatePhone: "(+977) 980-1093560 / 980-1093561",
+    address: "Putalisadak, Computer Bazar 4th floor",
   };
 
   // features we offer
-  const featuresOffered = ["Softwares"];
-
-  const softwares = [
-    "Pharmacy Shop Software",
-    "Grocery Shop",
-    "POS Software",
-    "Jwellery Software",
-    "Resturant Software",
-    "Grament Software",
-    "Retail Software",
-    "Salon Software",
-  ];
-
-  const icons = [
-    <LocalHospitalIcon />,
-    <LocalGroceryStoreIcon />,
-    <LoyaltyIcon />,
-    <DiamondIcon />,
-    <RestaurantIcon />,
-    <CheckroomIcon />,
-    <StorefrontIcon />,
-    <ChairAltIcon />,
-  ];
 
   // map of sotware
-  const softwareList = softwares.map((item, index) => (
-    <Typography className="software-list" key={index} sx={{ marginLeft: 5 }}>
-      <span className="icons-display">
-      {icons[index]}
-      </span>
-      {item}
-    </Typography>
-  ));
+  const softwareList = softwares.map((software, index) => {
+    const { icon, name } = software;
+    return (
+      <Typography
+        className="software-list"
+        key={index}
+        sx={{ marginLeft: 5, textTransform: "capitalize" }}
+      >
+        <span className="icons-display">{icon}</span>
+        {name}
+      </Typography>
+    );
+  });
 
   // map of features
   const itemList = featuresOffered.map((item, index) => (
@@ -68,8 +45,8 @@ const ComingSoon = () => {
 
   return (
     <ComingSoonWrapper>
-      {/* <Particles /> */}
       <Box className="coming-soon-section">
+        <Particles />
         <Container disableGutters maxWidth="xxl" fixed>
           <Grid
             container
@@ -78,7 +55,7 @@ const ComingSoon = () => {
             className="grid-container"
             columnSpacing={3}
           >
-            <Grid item xs={12} md={12} lg={6}>
+            <Grid item xs={11} sm={10} md={12} lg={6}>
               <Grid container maxWidth="xl">
                 <Grid
                   item
@@ -88,7 +65,7 @@ const ComingSoon = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 ></Grid>
-                <Grid item xs={12} md={12}>
+                <Grid item xs={12}>
                   <Box sx={{ borderTop: "3px solid #5b21b6", mt: 2 }}>
                     <Typography className="title">
                       We are upgrading...
@@ -99,11 +76,15 @@ const ComingSoon = () => {
                       For info, consult us through
                     </Typography>
                     <Typography className="coming-soon-mail" sx={{ mx: 1 }}>
-                      <a href={`mailto:${companyDetail.mail}`}>
+                      <Link
+                        href={`mailto:${companyDetail.mail}`}
+                        color="inherit"
+                        underline="hover"
+                      >
                         <AlternateEmailIcon />M AND R SOLUTIONS
-                      </a>
+                      </Link>
                     </Typography>
-                    <Box sx={{ m: 1 }} component="span">
+                    <Box sx={{}} component="span">
                       <Typography
                         className="coming-soon-phone-number"
                         sx={{ mx: 1 }}
@@ -118,13 +99,27 @@ const ComingSoon = () => {
                         <LocalPhoneIcon />
                         {companyDetail.alternatePhone}
                       </Typography>
+                      <Link
+                        href="https://goo.gl/maps/y9XrhJcJrir9JBFUA"
+                        underline="hover"
+                        target="_blank"
+                      >
+                        <Typography
+                          className="coming-soon-phone-number"
+                          sx={{ m: 1 }}
+                        >
+                          <LocationOnIcon />
+                          {companyDetail.address}
+                        </Typography>
+                      </Link>
                     </Box>
+                    <Box sx={{ m: 1 }} component=""></Box>
                   </Box>
                 </Grid>
               </Grid>
             </Grid>
 
-            <Grid item xs={12} md={12} lg={5} className="card-box">
+            <Grid item xs={12} lg={6} className="card-box">
               <Card variant="outlined" raised className="custom-card">
                 <img src={MrSolution} className="card-img" alt="logo" />
                 <Box className="card-texts">

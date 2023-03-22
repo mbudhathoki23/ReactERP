@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.nav`
   .contact-us-section {
-    background-color: var(--primary--200);
+    background-color: var(--primary--300);
   }
   .cWidth {
     width: 100%;
@@ -32,7 +32,7 @@ const Wrapper = styled.nav`
     border-color: white;
   }
   .MuiInputLabel-root.Mui-focused {
-    color: black;
+    color: #160f28;
     font-size: 18px;
   }
 `;

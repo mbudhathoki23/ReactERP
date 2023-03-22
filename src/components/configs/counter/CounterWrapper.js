@@ -7,12 +7,19 @@ const CounterWrapper = styled.section`
     color: var(--primary--600);
   }
 
-  @media (max-width: 600px) {
-    .timer-counter {
-      font-size: 22px !important;
+  .timer-counter {
+      font-size: 18px !important;
     }
     .counter-display {
-      font-size: 1.2rem;
+      font-size: .8rem;
+    }
+
+  @media (max-width: 600px) {
+    .timer-counter {
+      font-size: 18px !important;
+    }
+    .counter-display {
+      font-size: .8rem;
     }
   }
 `;

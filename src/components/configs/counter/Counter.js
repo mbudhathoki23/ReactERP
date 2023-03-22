@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import CounterWrapper from "./CounterWrapper";
 import Counter from "react-countdown-customizable";
-import Particle from "../particles/Particle";
 
 const Counters = () => {
   const [endDate, setEndDate] = useState(() => {
@@ -11,21 +10,17 @@ const Counters = () => {
   });
 
   const handleComplete = () => {
-    setEndDate((prevEndDate) => {
-      const newEndDate = new Date(prevEndDate);
-      newEndDate.setDate(newEndDate.getDate() + 7);
-      return newEndDate;
-    });
+    const currentDate = new Date();
+    const newEndDate = new Date(currentDate.setDate(currentDate.getDate() + 7));
+    setEndDate(newEndDate);
   };
 
   return (
     <CounterWrapper>
-      <Particle />
       <Counter
         date={endDate}
         timerStyle={{ marginTop: "10px" }}
         counterStyle={{
-          fontSize: "32px",
           color: "white",
           border: "1px solid #5b21b6",
           padding: "10px",
@@ -34,7 +29,7 @@ const Counters = () => {
         }}
         labelStyle={{
           color: "",
-          fontSize: "12px",
+          fontSize: "10px",
           textTransform: "uppercase",
           fontWeight: "800",
         }}

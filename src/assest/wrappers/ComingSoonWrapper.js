@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 const ComingSoonWrapper = styled.section`
   .title {
-    font-size: 75px;
+    /* font-size: 3rem; */
+    font-size: 68px;
     font-weight: 600;
-    line-height: 100%;
     color: white;
     text-shadow: 0px 0px 10px var(--primary--500);
+    line-height: 0.8;
+    margin: 1rem 0 0 0;
   }
   .sub-title {
     font-size: 20px;
@@ -32,8 +34,9 @@ const ComingSoonWrapper = styled.section`
     font-weight: 800;
     color: var(--primary--600);
   }
+
   .coming-soon-phone-number {
-    font-size: 18px;
+    font-size: 1.2rem;
   }
   .coming-soon-phone-number:hover {
     text-decoration: underline;
@@ -79,12 +82,10 @@ const ComingSoonWrapper = styled.section`
     margin: auto;
   }
   .card-texts {
-    position: relative;
-    /* z-index: 1; */
+    /* position: relative; */
   }
   .card-box {
-    position: relative;
-    /* z-index: 1; */
+    /* position: relative; */
   }
   .css-1402ce4-MuiGrid-root > .MuiGrid-item {
     padding: 0;
@@ -96,25 +97,34 @@ const ComingSoonWrapper = styled.section`
     right: 0px;
   }
 
-  .icons-display{
+  .icons-display {
     color: var(--primary--800);
-    padding-right:5px ;
+    padding-right: 5px;
+    fill: var(--primary--800);
+  }
+  .map-box {
+    /* position: relative; */
+    /* z-index:9; */
+  }
+
+  .map-size {
+    width: 100%;
+    height: 700px;
   }
 
   @media (max-width: 600px) {
-rd-box {
+    .card-box {
       width: 100%;
     }
     .features-offered-title {
       font-size: 28px;
     }
-    .coming-soon-logo-img{
+    .coming-soon-logo-img {
       height: 100px;
     }
-
   }
-  @media (min-width: 600) and (max-width: 786px){
-    .coming-soon-logo-img{
+  @media (min-width: 600) and (max-width: 786px) {
+    .coming-soon-logo-img {
       height: 200px;
     }
   }
@@ -123,6 +133,10 @@ rd-box {
       margin-left: 10px;
       height: fit-content;
     }
+  }
+
+  & path {
+    fill: #5b21b6;
   }
 `;
 
