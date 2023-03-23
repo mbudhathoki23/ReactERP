@@ -83,14 +83,14 @@ const OurPortfolio = () => {
             variant="h3"
             align="center"
             sx={{ textDecoration: "underline" }}
-            className="title"
+            className="component-title"
           >
-            Our PortFolio
+            Our Skilled Team
           </Typography>
           <Typography
             align="center"
             sx={{ my: 2 }}
-            className="subtitle"
+            className="component-text"
             fontSize={18}
           >
             Transforming ideas into reality with our personals.
@@ -99,9 +99,8 @@ const OurPortfolio = () => {
           <Carousel
             responsive={responsiveCarousel}
             showDots={false}
-            infinite
-            arrows={false}
-            autoPlay={true}
+            arrows={true}
+            // autoPlay={true}
             autoPlaySpeed={7000}
             partialVisbile={true}
             customTransition="all 2s ease-in-out"

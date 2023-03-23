@@ -68,9 +68,10 @@ const Testimonial = () => {
 
   return (
     <TestimonialWrapper>
-      <Box sx={{ py: 2 }} className="testimonial-section">
+      <Box sx={{ py: 3 }} className="testimonial-section">
+        <Typography align='center' sx={{ textDecoration: "underline" }} className="component-title">Testimonial</Typography>
+        <Typography align='center' sx={{ mb: 5 }} className="component-text">Listen to our customers that use our products.</Typography>
         <Container maxWidth="xl" fixed>
-
           <Carousel responsive={responsiveCarousel}
             showDots={false}
             infinite

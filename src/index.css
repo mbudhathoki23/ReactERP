@@ -110,3 +110,15 @@ li {
   padding: 0;
 }
 
+.component-title{
+  text-decoration: underline;
+  color: var(--primary--800);
+  font-size: 3rem !important;
+  font-weight: 600 !important;
+}
+
+.component-text{
+  color: var(--primary--700);
+  font-size: 1.2rem !important;
+}
+

@@ -36,11 +36,11 @@ const Hero = () => {
               >
                 {heroSectionContents.description}
               </Typography>
-              <ButtonGroup sx={{ my: 3 }} size="large" className="button-group">
-                <Button variant="outlined" className="demo-button">
+              <ButtonGroup sx={{ my: 3 }} size="large" className="button-group" variant="outlined" disableElevation>
+                <Button className="demo-button">
                   Request For Demo
                 </Button>
-                <Button variant="contained" className="download-button">
+                <Button variant="contained" className="download-button" href="https://mega.nz/folder/BrRWQJxZ#VUYUeqE2eAAUjkTI4jK4lw">
                   Download
                 </Button>
               </ButtonGroup>

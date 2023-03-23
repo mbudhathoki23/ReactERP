@@ -3,8 +3,8 @@ import styled from "styled-components";
 const HeroWrapper = styled.section`
   .hero-section-container {
     background-color: var(--primary--200);
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw; */
+    /* height: 100vh; */
   }
 
   .title {

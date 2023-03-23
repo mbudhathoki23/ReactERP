@@ -1,3 +1,4 @@
+import React from "react"
 import "./index.css";
 import NavBars from "./components/NavBars";
 import Hero from "./components/Hero";
@@ -17,7 +18,6 @@ function App() {
       <ContactUs />
       <Testimonial />
       <Footer />
-
       {/* <ComingSoon /> */}
     </div>
   );
