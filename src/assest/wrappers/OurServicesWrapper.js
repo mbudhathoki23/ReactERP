@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-  .our-service-icon {
-    margin: 50px 0;
+  .title {
+ color: var(--primary--800);
+ font-weight: 600 !important;
+  text-align: center !important;
   }
   .containg {
     height: 100%;
@@ -31,18 +33,14 @@ const Wrapper = styled.section`
     transform: scale(1.1);
   }
 
-  .our-service-paratitle{
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  .our-service-title{
+    color: var(--primary--800)
   }
 
   .our-service-icon,
-  .our-service-title,
   .our-service-paratitle {
     transition: all 250ms;
-    color: #5b21b6;
+    color: var(--primary--700);
   }
   .our-services-box:hover .our-service-icon,
   .our-services-box:hover .our-service-title,

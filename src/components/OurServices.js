@@ -13,11 +13,11 @@ const OurServices = () => {
             <Box className="title">
               <Typography
                 sx={{ textDecoration: "none" }}
-                className="component-title"
-                fontSize={32}
+                className="title"
+                fontSize={34}
                 align='center'
               >
-                Streamline Your Business Finances with a Complete Accounting Software Suite.
+                Streamline Your Business Finances with a Complete Accounting Software Suite
               </Typography>
 
               <Typography
@@ -33,7 +33,7 @@ const OurServices = () => {
           {/* second part */}
           <Grid
             container
-            sx={{ mt: 5 }}
+            sx={{ my: 5 }}
             className="containg holebackground"
             justifyContent="space-between"
             rowGap={6}
@@ -62,13 +62,13 @@ const OurServices = () => {
                           </Typography>
                         </Grid>
                         <Grid item sm={12} sx={{ my: 2 }}>
-                          <Typography fontSize={24} fontWeight={600} className="our-service-title" align="center">
+                          <Typography fontSize={18} fontWeight={600} className="our-service-title" align="center">
                             {title}
                           </Typography>
                         </Grid>
 
                         <Grid item sm={12} className="containg" sx={{ my: 2}}>
-                          <Typography fontSize={18} sx={{ lineHeight: 1.2 }} className="our-service-paratitle" align="center">
+                          <Typography fontSize={16} sx={{ lineHeight: 1.2 }} className="our-service-paratitle" align="center">
                             {paratitle}
                           </Typography>
                         </Grid>
