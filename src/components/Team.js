@@ -1,11 +1,13 @@
 import React from "react";
-import Wrapper from "../assest/wrappers/OurPortfolioPage";
+import Wrapper from "../assest/wrappers/TeamWrapper";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Typography, Container, Grid, Link } from "@mui/material";
+import { Typography, Container, Link } from "@mui/material";
 import { Box } from "@mui/system";
-import PortFolio from "../details/PortfolioDetails";
+import PortFolio from "../details/TeamDetails";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 
 const OurPortfolio = () => {
   const responsiveCarousel = {
@@ -28,48 +30,49 @@ const OurPortfolio = () => {
   };
 
   const portfolioDisplay = PortFolio.map((details, index) => {
-    const { name, img, email } = details;
+    const { name, img, email, facebook, linkedin } = details;
     return (
       <Box
         key={index}
         className="carousel_item"
         sx={{ backgroundImage: `url(${img})` }}
       >
-        <Box className="active-on-hover" key={index}>
-          <Grid container>
-            <Grid item sm={12}>
-              <Typography
-                fontSize={28}
-                variant="overline"
-                align="center"
-                gutterBottom={false}
-                fontWeight={600}
-                color="#8b5cf6"
-              >
-                {name}
-              </Typography>
-            </Grid>
-            <Grid item sm={12}>
+        <Box className="active-on-hover " key={index}>
+          <Typography
+            fontSize={28}
+            variant="overline"
+            gutterBottom={false}
+            fontWeight={600}
+            color="#8b5cf6"
+          >
+            {name}
+          </Typography>
+          <Box className="contact-links" display="flex" justifyContent="space-between">
+            <Box display="flex">
+              <Link href="facebook.com" target="_blank">
+                <FacebookIcon className="portfolio-icon" />
+              </Link>
+              <Link href="linkedin.com" target="_blank">
+                <LinkedInIcon className="portfolio-icon" />
+              </Link>
+            </Box>
+            <Box>
               <Typography
                 fontSize={24}
-                // variant="overline"
                 align="center"
                 fontStyle="italic"
                 gutterBottom={false}
                 fontWeight={600}
                 color="#9a65fe"
               >
-                <a href={`mailto:${email}`}>{email}</a>
+                <a href={`mailto:${email}`}>
+                  <AttachEmailIcon className="portfolio-icon" />
+                </a>
               </Typography>
-            </Grid>
-            <Grid item sm={12}>
-              <Typography>
-                <Link href="facebook.com">
-                  <FacebookIcon className="portfolio-icon" />
-                </Link>
-              </Typography>
-            </Grid>
-          </Grid>
+            </Box>
+          </Box>
+
+
         </Box>
       </Box>
     );

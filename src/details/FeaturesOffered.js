@@ -14,7 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import ERP from "../assest/images/process-icon.svg";
 
-export const featuresOffered = ["Softwares"];
+export const featuresOffered = ["The softwares we provide:"];
 
 export const softwares = [
   {

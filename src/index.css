@@ -113,8 +113,9 @@ li {
 .component-title{
   text-decoration: underline;
   color: var(--primary--800);
-  font-size: 3rem !important;
+  font-size: 3rem ;
   font-weight: 600 !important;
+  text-align: center !important;
 }
 
 .component-text{

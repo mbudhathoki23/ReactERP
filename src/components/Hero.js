@@ -40,26 +40,26 @@ const Hero = () => {
                 <Button className="demo-button">
                   Request For Demo
                 </Button>
-                <Button variant="contained" className="download-button" href="https://mega.nz/folder/BrRWQJxZ#VUYUeqE2eAAUjkTI4jK4lw">
+                <Button variant="contained" href="https://mega.nz/folder/BrRWQJxZ#VUYUeqE2eAAUjkTI4jK4lw/folder/1mYVzQTS"  target="_blank" className="download-button">
                   Download
                 </Button>
-              </ButtonGroup>
-            </Grid>
-            <Grid item sm={12} md={6}>
-              <Box
-                className="img-container"
-                sx={{
-                  backgroundImage: `url(${HeroImg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></Box>
-            </Grid>
+            </ButtonGroup>
           </Grid>
-        </Container>
-      </Box>
-    </HeroWrapper>
+          <Grid item sm={12} md={6}>
+            <Box
+              className="img-container"
+              sx={{
+                backgroundImage: `url(${HeroImg})`,
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></Box>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
+    </HeroWrapper >
   );
 };
 

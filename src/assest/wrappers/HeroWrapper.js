@@ -3,8 +3,7 @@ import styled from "styled-components";
 const HeroWrapper = styled.section`
   .hero-section-container {
     background-color: var(--primary--200);
-    /* width: 100vw; */
-    /* height: 100vh; */
+    height: calc(100vh - 106px);
   }
 
   .title {
@@ -17,48 +16,40 @@ const HeroWrapper = styled.section`
   .description {
     color: var(--primary--600);
   }
-  .hero-section {
-    width: 100%;
-    position: relative;
-  }
-
-  #hero-section-particle {
-    position: absolute;
-    z-index: 1;
-  }
-
-  .content-box {
-    height: 100%;
-    position: relative;
-    z-index: 0;
-  }
   .img-container {
     width: 100%;
-    height: 100vh;
+    height: 800px;
   }
 
   .css-1s324r5-MuiGrid-root > .MuiGrid-item {
     padding: 0;
   }
 
-  /*  */
   .demo-button,
   .download-button {
     color: var(--primary--800);
-    border: 1px solid var(--primary--600);
+    border-color:var(--primary--600);
   }
   .download-button {
     background-color: var(--primary--600);
     color: white;
   }
   .demo-button:hover {
-    border: 1px solid var(--primary--800);
+    border-color:var(--primary--800);
   }
   .download-button:hover {
-    border: 1px solid var(--primary--400);
+    /* border: 1px solid var(--primary--400); */
     background-color: var(--primary--400);
     color: var(--primary--800);
   }
+
+  @media (max-width: 620px) {
+    .img-container {
+    width: 100%;
+    height: 400px !important;
+  }
+  }
+
 `;
 
 export default HeroWrapper;

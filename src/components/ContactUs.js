@@ -10,21 +10,32 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import React from "react";
+import React,{useState} from "react";
 import Wrapper from "../assest/wrappers/ContactUsWrapper";
 import SendIcon from "@mui/icons-material/Send";
 import ContactUsImg from "../assest/images/Contact-us.png";
 
 const ContactUs = () => {
 
+  const [messageSubject, setMessageSubject] =  useState('')
+  const [phoneNumber, setPhoneNumber] =  useState('')
+  const [fullName, setFullName] =  useState('') 
+  const [message, setMessage] =  useState('') 
+  const [email, setEmail] =  useState('') 
+
+  const sendMail =()=>{
+    const mailtoLink = `mailto:info@mrsolution.com.np?cc=${email}&subject=${encodeURIComponent(messageSubject)}&body=${encodeURIComponent(`Message: ${message}\nFull Name: ${fullName}\nEmail: ${email}\nPhone Number: ${phoneNumber}`)}`
+    window.location.href = mailtoLink
+  }
+
   return (
     <Wrapper>
       <Box className="contact-us-section" sx={{ py: 5 }}>
         <Container>
-          <Typography variant="h3" sx={{ mb: 1 }}>
+          <Typography className="component-title" sx={{ mb: 1 }}>
             Contact Us
           </Typography>
-          <Typography variant="body2" sx={{ mb: 3 }}>
+          <Typography className="component-text" sx={{ mb: 3 }}>
             If any problem you can contact us through the form given below.
           </Typography>
           <Grid container spacing={5}>
@@ -41,7 +52,7 @@ const ContactUs = () => {
                       id="fullName"
                       helperText="Enter full name."
                       type="text"
-                      // onChange={this.addFullName}
+                      onChange={(e)=>setFullName(e.target.value)}
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -52,7 +63,8 @@ const ContactUs = () => {
                       required
                       id="customerEmail"
                       type="email"
-                      // onChange={this.addEmail}
+                      onChange={(e)=>setEmail(e.target.value)}
+                      
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -62,7 +74,7 @@ const ContactUs = () => {
                       fullWidth
                       id="phoneNumber"
                       type="text"
-                      // onChange={this.addPhoneNumber}
+                      onChange={(e)=>setPhoneNumber(e.target.value)}
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -73,7 +85,8 @@ const ContactUs = () => {
                       required
                       id="messageSubject"
                       type="text"
-                      // onChange={this.addSubject}
+                      onChange={(e)=>setMessageSubject(e.target.value)}
+
                     />
                   </Grid>
                   <Grid item xs={12}>
@@ -86,7 +99,8 @@ const ContactUs = () => {
                       multiline
                       minRows={4}
                       type="text"
-                      // onChange={this.addMessage}
+                      onChange={(e)=>setMessage(e.target.value)}
+
                     />
                   </Grid>
                 </Grid>
@@ -98,6 +112,7 @@ const ContactUs = () => {
                   className="cButton"
                   fullWidth
                   type="submit"
+                  onClick={sendMail}
                   >
                   <Typography variant="body1">Submit Message</Typography>
                 </Button>

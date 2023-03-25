@@ -9,6 +9,7 @@ import Particles from "./configs/particles/Particle";
 import Counter from "./configs/counter/Counter";
 import { featuresOffered, softwares } from "../details/FeaturesOffered";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import QrCode from "../assest/images/qrcode.png";
 
 const ComingSoon = () => {
   // company details
@@ -113,7 +114,12 @@ const ComingSoon = () => {
                         </Typography>
                       </Link>
                     </Box>
-                    <Box sx={{ m: 1 }} component=""></Box>
+                    <Box sx={{ mx: 4 }}>
+                      <Typography className="qrcode-text">
+                        Scan here for contact info: 
+                          <img  className="qrcode-img" src={QrCode} alt="QR code for contact detail" width={150} height={150} />
+                      </Typography>
+                    </Box>
                   </Box>
                 </Grid>
               </Grid>

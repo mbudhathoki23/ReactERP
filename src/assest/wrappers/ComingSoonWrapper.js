@@ -56,10 +56,11 @@ const ComingSoonWrapper = styled.section`
     font-size: 24px;
     font-weight: 700;
     transition: all 0.5ms ease-in-out 0.5ms;
+    color: var(--primary--800)
   }
   .features-offered:hover {
     cursor: pointer;
-    text-shadow: 0px 0px 10px var(--primary--300);
+    /* text-shadow: 0px 0px 10px var(--primary--800); */
   }
 
   .custom-card {
@@ -111,6 +112,17 @@ const ComingSoonWrapper = styled.section`
     width: 100%;
     height: 700px;
   }
+
+  .qrcode-text{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary--600);
+}
+
+.qrcode-img{
+  margin-left: 18px;
+  border: 2px solid var(--primary--600);
+}
 
   @media (max-width: 600px) {
     .card-box {

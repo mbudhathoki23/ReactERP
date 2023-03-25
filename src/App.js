@@ -3,10 +3,11 @@ import "./index.css";
 import NavBars from "./components/NavBars";
 import Hero from "./components/Hero";
 import OurServices from "./components/OurServices";
-import OurPortfolio from "./components/OurPortfolio";
+import Team from "./components/Team";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
+// import ComingSoon from "./components/ComingSoon";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <NavBars />
       <Hero />
       <OurServices />
-      <OurPortfolio />
+      <Team />
       <ContactUs />
       <Testimonial />
       <Footer />
