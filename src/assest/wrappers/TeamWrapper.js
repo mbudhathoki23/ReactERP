@@ -26,6 +26,7 @@ const Wrapper = styled.section`
     background-size: cover;
     position: relative;
     z-index: 0;
+    transition: all 1.2s linear;
   }
 
   .carousel_item::before {
@@ -37,7 +38,6 @@ const Wrapper = styled.section`
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-  
   }
 
   .carousel_item:hover::after {
@@ -100,6 +100,13 @@ const Wrapper = styled.section`
 
   .contact-links{
     margin-top: 100%;
+  }
+
+  .react-multiple-carousel__arrow.react-multiple-carousel__arrow--left{
+background-color: var(--primary--700);
+  }
+  .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right{
+    background-color: var(--primary--700);
   }
 
 

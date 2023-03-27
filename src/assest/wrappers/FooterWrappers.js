@@ -60,5 +60,19 @@ padding-bottom: 0px;
 .list-items:hover{
     color: var(--primary--800);
 }
+
+.copyright-text{
+    color: var(--primary--100);
+}
+
+.footer-foot-link{
+    color: var(--primary--100);
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.footer-foot-link:hover{
+    cursor: pointer;
+    color: var(--primary--800);
+}
 `
 export default FooterWrapper;

@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   .title {
- color: var(--primary--800);
- font-weight: 600 !important;
-  text-align: center !important;
+    color: var(--primary--800);
+    font-weight: 600 !important;
+    text-align: center !important;
   }
   .containg {
     height: 100%;
@@ -26,15 +26,36 @@ const Wrapper = styled.section`
 
   .our-services-box {
     transition: all 300ms;
+    position: relative;
+    overflow: hidden;
   }
+
+  .our-services-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary--800);
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: rotate(180deg);
+  transition: transform .8s;
+
+}
+
+.our-services-box:hover::before {
+  transform: rotate(0deg);
+}
+
   .our-services-box:hover {
-    background-color: var(--primary--800);
     cursor: pointer;
     transform: scale(1.1);
   }
 
-  .our-service-title{
-    color: var(--primary--800)
+  .our-service-title {
+    color: var(--primary--800);
   }
 
   .our-service-icon,

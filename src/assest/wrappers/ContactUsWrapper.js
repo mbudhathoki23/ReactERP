@@ -10,9 +10,12 @@ const Wrapper = styled.nav`
 
   .cButton {
     background-color: var(--primary--700);
+    position:relative;
+    transition: all .3s linear;
   }
+
   .cButton:hover {
-    background-color: white;
+    background-color: var(--primary--100);
     color: var(--primary--700);
   }
 
