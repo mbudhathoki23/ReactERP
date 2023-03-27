@@ -12,12 +12,11 @@ const OurServices = () => {
           <Box className="containg ourservicesmain" sx={{ height: 300 }}>
             <Box className="title">
               <Typography
-                sx={{ textDecoration: "none" }}
-                className="title"
+                className="component-title"
                 fontSize={34}
                 align='center'
               >
-                Streamline Your Business Finances with a Complete Accounting Software Suite
+                The Services We Offer
               </Typography>
 
               <Typography
@@ -25,6 +24,7 @@ const OurServices = () => {
                 sx={{ my: 2 }}
                 className="component-text"
               >
+                Streamline Your Business Finances with a Complete Accounting Software Suite
               </Typography>
 
             </Box>
@@ -67,7 +67,7 @@ const OurServices = () => {
                           </Typography>
                         </Grid>
 
-                        <Grid item sm={12} className="containg" sx={{ my: 2}}>
+                        <Grid item sm={12} className="containg" sx={{ my: 2 }}>
                           <Typography fontSize={16} sx={{ lineHeight: 1.2 }} className="our-service-paratitle" align="center">
                             {paratitle}
                           </Typography>
