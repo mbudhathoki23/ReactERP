@@ -47,6 +47,8 @@ Button{
     text-decoration: none;
     position: relative;
     transition: all 0.8s ease-in-out;
+    margin: 0 inherit;
+    padding: 0 inherit;
 }
 
 .cButton::after{
@@ -54,22 +56,17 @@ content: "";
 width: 0%;
 height: 2px;
 position: absolute;
-bottom: 5px;
+bottom: 0px;
 left: 0;
 background-color: var(--primary--800);
 transition: all 0.5s ease-in-out;
-}
-
-.cButton:hover{
-    color: black;
 }
 
 .cButton:hover::after{
  width: 100%;
 }
 
-
-/* material ui class names */
+/* material ui universal class  */
 .css-6hp17o-MuiList-root-MuiMenu-list{
   background-color: red;
 }

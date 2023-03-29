@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
 
-
-
-
   .title {
     color: var(--primary--800);
     cursor: pointer;
@@ -18,7 +15,7 @@ const Wrapper = styled.section`
   }
 
   .carousel_item {
-    min-height:calc(100vh - 300px);
+    height:calc(100vh - 300px);
     margin: 0 1rem;
     padding: 1rem;
     background-repeat: no-repeat;

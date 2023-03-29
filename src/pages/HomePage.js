@@ -1,23 +1,24 @@
-import React from 'react'
-import Hero from "../components/Hero"
-import OurServices from "../components/OurServices"
-import Team from "../components/Team"
-import ContactUs from "../components/ContactUs"
-import Testimonial from "../components/Testimonial"
-import HomeNavBars from '../components/HomeNavBars'
+import React from "react";
+import Hero from "../components/Hero";
+import OurServices from "../components/OurServices";
+import Team from "../components/Team";
+import Enquiry from "../components/Enquiry";
+import Testimonial from "../components/Testimonial";
+import AboutUs from "../components/AboutUs";
+import ComingSoon from "../components/ComingSoon";
 
 const HomePage = () => {
-    return (
-        <>
-            <HomeNavBars />
-            <Hero />
-            <OurServices />
-            <Team />
-            <ContactUs />
-            <Testimonial />
+  return (
+    <>
+      <Hero />
+      <OurServices />
+      <AboutUs />
+      {/* <Team /> */}
+      <Enquiry />
+      {/* <ComingSoon /> */}
+      {/* <Testimonial /> */}
+    </>
+  );
+};
 
-        </>
-    )
-}
-
-export default HomePage
+export default HomePage;

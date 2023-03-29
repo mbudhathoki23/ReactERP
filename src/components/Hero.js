@@ -7,15 +7,15 @@ import HeroImg from "../assest/images/HeroSection.jpg";
 
 const Hero = () => {
   const heroSectionContents = {
-    title: "Welcome to our website for best conceling",
+    title: "Streamline your business with our management software.",
     description:
-      "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.",
+      "    Streamline your business, Management software, Simplify management tasks, and processes Save time Improve productivity",
   };
 
   return (
     <HeroWrapper>
       {/* <Particle /> */}
-      <Box className="hero-section-container">
+      <Box className="hero-section-container" id="Home">
         <Container className="hero-section" maxWidth="xl" fixed>
           <Grid
             container
@@ -36,7 +36,7 @@ const Hero = () => {
               >
                 {heroSectionContents.description}
               </Typography>
-              <ButtonGroup sx={{ my: 3 }} size="large" className="button-group" variant="outlined" disableElevation>
+              <ButtonGroup sx={{ my: 3, display:"none" }} size="large" className="button-group" variant="outlined" disableElevation>
                 <Button className="demo-button">
                   Request For Demo
                 </Button>

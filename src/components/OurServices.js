@@ -7,14 +7,14 @@ import OurServicesDetails from "../details/OurServicesDetails";
 const OurServices = () => {
   return (
     <Wrapper>
-      <Box className="backgroundColorChange" sx={{ py: 4 }}>
+      <Box className="backgroundColorChange" sx={{ py: 4 }} id="Services">
         <Container className="containg holebackground" maxWidth="xl" fixed>
           <Box className="containg ourservicesmain" sx={{ height: 300 }}>
             <Box className="title">
               <Typography
                 className="component-title"
                 fontSize={34}
-                align='center'
+                align="center"
               >
                 The Services We Offer
               </Typography>
@@ -24,9 +24,9 @@ const OurServices = () => {
                 sx={{ my: 2 }}
                 className="component-text"
               >
-                Streamline Your Business Finances with a Complete Accounting Software Suite
+                Streamline Your Business Finances with a Complete Accounting
+                Software Suite
               </Typography>
-
             </Box>
           </Box>
 
@@ -52,23 +52,33 @@ const OurServices = () => {
                     className="our-services-box"
                   >
                     <Grid container className="containg cmargin ">
-                      <Container
-                        fixed
-                        sx={{ borderRadius: 10 }}
-                      >
+                      <Container fixed sx={{ borderRadius: 10 }}>
                         <Grid item sm={12} sx={{ my: 2 }}>
-                          <Typography className="our-service-icon" align="center">
+                          <Typography
+                            className="our-service-icon"
+                            align="center"
+                          >
                             {icon}
                           </Typography>
                         </Grid>
                         <Grid item sm={12} sx={{ my: 2 }}>
-                          <Typography fontSize={18} fontWeight={600} className="our-service-title" align="center">
+                          <Typography
+                            fontSize={18}
+                            fontWeight={600}
+                            className="our-service-title"
+                            align="center"
+                          >
                             {title}
                           </Typography>
                         </Grid>
 
                         <Grid item sm={12} className="containg" sx={{ my: 2 }}>
-                          <Typography fontSize={16} sx={{ lineHeight: 1.2 }} className="our-service-paratitle" align="center">
+                          <Typography
+                            fontSize={16}
+                            sx={{ lineHeight: 1.2 }}
+                            className="our-service-paratitle"
+                            align="center"
+                          >
                             {paratitle}
                           </Typography>
                         </Grid>

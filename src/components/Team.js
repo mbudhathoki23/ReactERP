@@ -6,8 +6,8 @@ import { Typography, Container, Link } from "@mui/material";
 import { Box } from "@mui/system";
 import PortFolio from "../details/TeamDetails";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import AttachEmailIcon from '@mui/icons-material/AttachEmail';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import AttachEmailIcon from "@mui/icons-material/AttachEmail";
 
 const OurPortfolio = () => {
   const responsiveCarousel = {
@@ -47,12 +47,16 @@ const OurPortfolio = () => {
           >
             {name}
           </Typography>
-          <Box className="contact-links" display="flex" justifyContent="space-between">
+          <Box
+            className="contact-links"
+            display="flex"
+            justifyContent="space-between"
+          >
             <Box display="flex">
-              <Link href="facebook.com" target="_blank">
+              <Link href={facebook} target="_blank">
                 <FacebookIcon className="portfolio-icon" />
               </Link>
-              <Link href="linkedin.com" target="_blank">
+              <Link href={linkedin} target="_blank">
                 <LinkedInIcon className="portfolio-icon" />
               </Link>
             </Box>
@@ -71,8 +75,6 @@ const OurPortfolio = () => {
               </Typography>
             </Box>
           </Box>
-
-
         </Box>
       </Box>
     );
@@ -80,7 +82,7 @@ const OurPortfolio = () => {
 
   return (
     <Wrapper>
-      <Box className="our-portfolio-section" sx={{ py: 4 }}>
+      <Box className="our-portfolio-section" sx={{ py: 4 }} id="Team">
         <Container sx={{ my: 3 }} maxWidth="xl" fixed>
           <Typography
             variant="h3"
@@ -104,7 +106,7 @@ const OurPortfolio = () => {
             showDots={false}
             arrows={true}
             // autoPlay={true}
-            autoPlaySpeed={7000}
+            // autoPlaySpeed={7000}
             partialVisbile={true}
             customTransition="all 2s ease-in-out"
             draggable
@@ -117,6 +119,7 @@ const OurPortfolio = () => {
             containerClass="portfolio-container"
             rewind={false}
             rewindWithAnimation={false}
+            height={700}
           >
             {portfolioDisplay}
           </Carousel>

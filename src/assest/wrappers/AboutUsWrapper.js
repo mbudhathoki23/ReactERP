@@ -9,6 +9,10 @@ const AboutUsWrapper = styled.section`
     width: 100%;
     height: 500px;
   }
+
+  .about-description{
+    color: var(--primary--600);
+  }
 `;
 
 export default AboutUsWrapper;
