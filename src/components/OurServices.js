@@ -18,7 +18,6 @@ const OurServices = () => {
               >
                 The Services We Offer
               </Typography>
-
               <Typography
                 fontSize={18}
                 sx={{ my: 2 }}
@@ -36,7 +35,7 @@ const OurServices = () => {
             sx={{ my: 5 }}
             className="containg holebackground"
             justifyContent="space-between"
-            rowGap={6}
+            rowSpacing={6}
           >
             {OurServicesDetails.map((items, index) => {
               const { title, icon, paratitle } = items;
@@ -44,14 +43,15 @@ const OurServices = () => {
                 <Grid item key={index} sx={{ mx: 2 }}>
                   <Box
                     sx={{
-                      width: 350,
-                      height: 300,
+                      maxWidth: 350,
+                      minWidth: 200,
                       backgroundColor: "white",
                       borderRadius: 10,
+                      py: 2,
                     }}
                     className="our-services-box"
                   >
-                    <Grid container className="containg cmargin ">
+                    <Grid container className="containg cmargin">
                       <Container fixed sx={{ borderRadius: 10 }}>
                         <Grid item sm={12} sx={{ my: 2 }}>
                           <Typography

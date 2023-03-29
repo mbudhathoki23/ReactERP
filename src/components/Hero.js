@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <HeroWrapper>
       {/* <Particle /> */}
-      <Box className="hero-section-container" id="Home">
+      <Box className="hero-section-container" id="Home" sx={{ py: 5 }}>
         <Container className="hero-section" maxWidth="xl" fixed>
           <Grid
             container
@@ -36,17 +36,28 @@ const Hero = () => {
               >
                 {heroSectionContents.description}
               </Typography>
-              <ButtonGroup sx={{ my: 3, display:"none" }} size="large" className="button-group" variant="outlined" disableElevation>
-                <Button className="demo-button">
-                  Request For Demo
-                </Button>
-                <Button variant="contained" href="https://mega.nz/folder/BrRWQJxZ#VUYUeqE2eAAUjkTI4jK4lw/folder/1mYVzQTS"  target="_blank" className="download-button">
+              <ButtonGroup
+                sx={{ my: 3, display: "none" }}
+                size="large"
+                className="button-group"
+                variant="outlined"
+                disableElevation
+              >
+                <Button className="demo-button">Request For Demo</Button>
+                <Button
+                  variant="contained"
+                  href="https://mega.nz/folder/BrRWQJxZ#VUYUeqE2eAAUjkTI4jK4lw/folder/1mYVzQTS"
+                  target="_blank"
+                  className="download-button"
+                >
                   Download
                 </Button>
-            </ButtonGroup>
-          </Grid>
-          <Grid item sm={12} md={6}>
-            <Box
+              </ButtonGroup>
+            </Grid>
+            <Grid
+              item
+              sm={12}
+              md={6}
               className="img-container"
               sx={{
                 backgroundImage: `url(${HeroImg})`,
@@ -54,12 +65,11 @@ const Hero = () => {
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
               }}
-            ></Box>
+            ></Grid>
           </Grid>
-        </Grid>
-      </Container>
-    </Box>
-    </HeroWrapper >
+        </Container>
+      </Box>
+    </HeroWrapper>
   );
 };
 

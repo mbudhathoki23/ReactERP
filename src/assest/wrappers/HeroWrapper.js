@@ -3,7 +3,6 @@ import styled from "styled-components";
 const HeroWrapper = styled.section`
   .hero-section-container {
     background-color: var(--primary--200);
-    height: calc(100vh - 106px);
   }
 
   .title {
@@ -18,7 +17,8 @@ const HeroWrapper = styled.section`
   }
   .img-container {
     width: 100%;
-    height: 800px;
+    min-height: 500px;
+    height: auto;
   }
 
   .css-1s324r5-MuiGrid-root > .MuiGrid-item {

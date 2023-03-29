@@ -51,6 +51,10 @@ Button{
     padding: 0 inherit;
 }
 
+.cButton:hover{
+  text-decoration: none;
+}
+
 .cButton::after{
 content: "";
 width: 0%;

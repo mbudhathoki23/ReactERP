@@ -26,28 +26,27 @@ const Wrapper = styled.section`
 
   .our-services-box {
     transition: all 300ms;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
   }
 
   .our-services-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--primary--800);
-  z-index: -1;
-  transform-origin: bottom left;
-  transform: rotate(180deg);
-  transition: transform .8s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary--800);
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(180deg);
+    transition: transform 0.8s;
+  }
 
-}
-
-.our-services-box:hover::before {
-  transform: rotate(0deg);
-}
+  .our-services-box:hover::before {
+    transform: rotate(0deg);
+  }
 
   .our-services-box:hover {
     cursor: pointer;
@@ -73,10 +72,25 @@ const Wrapper = styled.section`
     height: auto;
   }
 
+  .css-1n129u2-MuiGrid-root {
+    justify-content: space-between;
+  }
+
   .scale-in-center {
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
     animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @media (min-width: 500px) and (max-width: 756px) {
+    .css-1n129u2-MuiGrid-root {
+      justify-content: center;
+    }
+  }
+  @media (min-width: 756px) and (max-width: 900px) {
+    .css-1n129u2-MuiGrid-root {
+      justify-content: center;
+    }
   }
 
   /**

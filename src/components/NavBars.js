@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { navLinks } from "../details/NavLinksDetails";
 import { Link } from "react-scroll";
-import { scroller } from "react-scroll";
+// import { scroller } from "react-scroll";
 
 const NavBars = () => {
   // Small Screen Menu List
@@ -51,7 +51,9 @@ const NavBars = () => {
       <Button
         key={index}
         onClick={handleCloseNavMenu}
-        sx={{ mx: 2, color: "white", display: "block" }}
+        sx={{ mx: 2, color: "black", display: "block", "&:hover": {
+          textDecoration:"none"
+        } }}
         className="cButton"
         disableRipple
         disableFocusRipple

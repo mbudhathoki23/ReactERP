@@ -34,14 +34,20 @@ const ContactUs = () => {
   return (
     <Wrapper>
       <Box className="contact-us-section" sx={{ py: 5 }} id="Enquiry">
-        <Container>
+        <Container maxWidth="xl" fixed>
           <Typography className="component-title" sx={{ mb: 1 }}>
             Enquiry
           </Typography>
           <Typography className="component-text" sx={{ mb: 3 }}>
             If any problem you can contact us through the form given below.
           </Typography>
-          <Grid container spacing={5}>
+          <Grid
+            container
+            justifyContent="center"
+            alignItems="center"
+            className="content-box"
+            columnSpacing={2}
+          >
             <Grid item xs={12} sm={6}>
               <Box className="cWidth">
                 <form>
@@ -119,15 +125,18 @@ const ContactUs = () => {
                 </Button>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <Box className="img-container">
-                <img
-                  src={ContactUsImg}
-                  className="contact-us-image"
-                  alt="contact us svg element"
-                />
-              </Box>
-            </Grid>
+            <Grid
+              className="img-container"
+              item
+              xs={12}
+              sm={6}
+              sx={{
+                backgroundImage: `url(${ContactUsImg})`,
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></Grid>
           </Grid>
         </Container>
       </Box>

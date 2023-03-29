@@ -58,7 +58,8 @@ padding-bottom: 0px;
     text-decoration: none;
 }
 .list-items:hover{
-    color: var(--primary--800);
+    color: var(--primary--700);
+    /* color: blue; */
 }
 
 .copyright-text{

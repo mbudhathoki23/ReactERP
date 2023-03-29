@@ -22,10 +22,7 @@ const Wrapper = styled.nav`
   .img-container {
     width: 100%;
     height: 400px;
-    margin-top: -145px;
-  }
-  img.contact-us-image {
-    transform: scaleX(-1);
+    /* margin-top: -145px; */
   }
 
   .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
