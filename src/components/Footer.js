@@ -72,7 +72,7 @@ const Footer = () => {
                   {navLinks.map((link, index) => {
                     return (
                       <ListItem key={index} className="list-item-box">
-                        <Link to={link} className="list-items">
+                        <Link to={link} className="list-items" offset={-122} duration={500} activeClass="active">
                           {link}
                         </Link>
                       </ListItem>
