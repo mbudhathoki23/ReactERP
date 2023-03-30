@@ -48,7 +48,7 @@ const ComingSoon = () => {
     <ComingSoonWrapper>
       <Box className="coming-soon-section">
         <Particles />
-        <Container disableGutters maxWidth="xxl" fixed>
+        <Container disableGutters maxWidth="xl" fixed>
           <Grid
             container
             alignItems="center"

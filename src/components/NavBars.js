@@ -47,34 +47,33 @@ const NavBars = () => {
   // navbar for small screens
   const navBarLink = navLinks.map((link, index) => {
     return (
-      <Button
+      <Link
         key={index}
-        onClick={handleCloseNavMenu}
-        sx={{
-          mx: 2,
-          color: "black",
-          display: "block",
-          "&:hover": {
-            textDecoration: "none",
-          },
-        }}
+        to={link}
         className="cButton"
-        disableRipple
-        disableFocusRipple
-        disableTouchRipple
+        offset={-122}
+        duration={15000}
+        activeClass="active"
       >
-        <Link
+        <Button
           key={index}
-          to={link}
+          onClick={handleCloseNavMenu}
+          sx={{
+            mx: 2,
+            color: "black",
+            display: "block",
+            "&:hover": {
+              textDecoration: "none",
+            },
+          }}
           className="cButton"
-          spy={true}
-          offset={-122}
-          duration={500}
-          activeClass="active"
+          disableRipple
+          disableFocusRipple
+          disableTouchRipple
         >
           {link}
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     );
   });
 
@@ -84,7 +83,7 @@ const NavBars = () => {
       <>
         <Button
           key={index}
-          sx={{ mx: 2, color: "white", display: {md: "none", xl:"block"} }}
+          sx={{ mx: 2, color: "white", display: { md: "none", xl: "block" } }}
           className="cButton"
           id="basic-button"
           aria-controls={open ? "basic-menu" : undefined}
@@ -127,7 +126,7 @@ const NavBars = () => {
       <Link to={navlink} offset={-122} duration={500} activeClass="active">
         <Button
           key={index}
-          sx={{ mx: 2, color: "white",  display: {md: "none", xl:"block"} }}
+          sx={{ mx: 2, color: "white", display: { md: "none", xl: "block" } }}
           className="cButton"
           disableRipple
           disableFocusRipple
@@ -193,7 +192,8 @@ const NavBars = () => {
                 </Box>
               </Box>
               {/* small screen display */}
-              <Box sx={{ flexGrow: 1, display: {  md: "block", xl: "none" } }}>
+              {/* icon */}
+              <Box sx={{ flexGrow: 1, display: { md: "block", xl: "none" } }}>
                 <IconButton
                   size="large"
                   aria-label="account of current user"
@@ -205,6 +205,7 @@ const NavBars = () => {
                 >
                   <FontAwesomeIcon icon={faBars} />
                 </IconButton>
+                {/* menulist for small screen */}
                 <Menu
                   id="menu-appbar"
                   anchorEl={anchorElNav}

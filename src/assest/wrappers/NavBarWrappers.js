@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.nav`
   .navbar-bg-color {
-    background-color: var(--primary--400);
+    background-color: var(--primary--800);
   }
 
   .navigation-xl-display {
@@ -24,12 +24,12 @@ const Wrapper = styled.nav`
   .company-logo-name {
     font-weight: bold;
     font-size: 2rem;
-    color: var(--primary--200);
+    color: var(--secondary-color);
     text-transform: uppercase;
   }
 
   .company-logo-location {
-    color: var(--primary--200);
+    color: var(--secondary-color);
     text-transform: capitalize;
     font-weight: 500 !important;
     font-size: 1.1rem;
@@ -42,7 +42,7 @@ const Wrapper = styled.nav`
 
   .cButton {
     font-weight: bold;
-    color: var(--primary--100);
+    color: var(--secondary-color);
     text-decoration: none;
     position: relative;
     transition: all 0.8s ease-in-out;
@@ -61,7 +61,7 @@ const Wrapper = styled.nav`
     position: absolute;
     bottom: 0px;
     left: 0;
-    background-color: var(--primary--800);
+    background-color: var(--secondary-color);
     transition: all 0.5s ease-in-out;
   }
 
@@ -70,9 +70,9 @@ const Wrapper = styled.nav`
   }
 
   /* material ui universal class  */
-  .css-6hp17o-MuiList-root-MuiMenu-list {
+  /* .css-6hp17o-MuiList-root-MuiMenu-list {
     background-color: red;
-  }
+  } */
   /**
  * ----------------------------------------
  * animation slide-in-left

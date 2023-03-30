@@ -26,13 +26,13 @@ const Wrapper = styled.nav`
   }
 
   .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-    border-color: white;
+    border-color: var(--secondary-color);
   }
   .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-    border-color: white;
+    border-color: var(--secondary-color);
   }
   .MuiInputLabel-root.Mui-focused {
-    color: #160f28;
+    color: var(--tertairy-color);
     font-size: 18px;
   }
 `;

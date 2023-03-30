@@ -14,7 +14,6 @@ const ComingSoonWrapper = styled.section`
     font-size: 20px;
   }
   .coming-soon-section {
-    height: 100vh;
     background-color: var(--primary--200);
   }
 

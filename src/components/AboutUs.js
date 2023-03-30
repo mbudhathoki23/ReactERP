@@ -14,17 +14,18 @@ const AboutUs = () => {
             columnSpacing={3}
             sx={{ xs: { flexDirection: "column-reverse" } }}
           >
-            <Grid item sm={12} md={6}>
-              <Box
-                className="img-container"
-                sx={{
-                  backgroundImage: `url(${TeamImg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "contain",
-                  backgroundRepeat: "no-repeat",
-                }}
-              ></Box>
-            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={6}
+              className="img-container"
+              sx={{
+                backgroundImage: `url(${TeamImg})`,
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></Grid>
             <Grid item sm={12} md={6} sx={{ pt: { md: 6 } }}>
               <Box>
                 <Box sx={{ mb: 3 }}>

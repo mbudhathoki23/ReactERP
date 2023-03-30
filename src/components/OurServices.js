@@ -34,7 +34,7 @@ const OurServices = () => {
             container
             sx={{ my: 5 }}
             className="containg holebackground"
-            justifyContent="space-between"
+            justifyContent="space-around"
             rowSpacing={6}
           >
             {OurServicesDetails.map((items, index) => {

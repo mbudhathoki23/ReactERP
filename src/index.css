@@ -14,6 +14,12 @@
   --primary--800: #5b21b6;
   --primary--900: #4c1d95;
 
+  /* new colors */
+  --primary-color: #5c57a0;
+  --secondary-color: #e6e4f3;
+  --tertiary-color: #0d113c;
+  --quaternary-color: #acacce;
+
   /* box shawdoing color */
 
   --gray--100: #f3f4f6;
@@ -89,9 +95,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 /* list universal css remover */
 li {
@@ -103,7 +106,7 @@ li {
 .component-title {
   text-decoration: underline;
   color: var(--primary--800);
-  font-size: 3rem !important;
+  font-size: 2rem !important;
   font-weight: 600 !important;
   text-align: center !important;
 }
@@ -113,7 +116,7 @@ li {
   font-size: 1.2rem !important;
 }
 
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -121,6 +124,8 @@ h4,
 h5,
 h6,
 ul,
-li {
+li,
+span,
+div {
   user-select: none;
-}
+} */

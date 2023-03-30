@@ -13,7 +13,7 @@ const HeroWrapper = styled.section`
     text-shadow: 0px 0px 10px var(--primary--300);
   }
   .description {
-    color: var(--primary--600);
+    color: var(--tertiary-color);
   }
   .img-container {
     width: 100%;
