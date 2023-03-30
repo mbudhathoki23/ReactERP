@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 const AboutUsWrapper = styled.section`
   .about-us-section {
     background-color: var(--primary--200);
@@ -10,8 +9,14 @@ const AboutUsWrapper = styled.section`
     height: 500px;
   }
 
-  .about-description{
+  .about-description {
     color: var(--primary--600);
+  }
+
+  @media (max-width: 600px) {
+    .css-1ijbxbl-MuiGrid-root {
+      flex-direction: column-reverse;
+    }
   }
 `;
 

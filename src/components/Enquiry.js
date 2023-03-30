@@ -48,7 +48,7 @@ const ContactUs = () => {
             className="content-box"
             columnSpacing={2}
           >
-            <Grid item xs={12} sm={6}>
+            <Grid item sm={12} md={6}>
               <Box className="cWidth">
                 <form>
                   <Grid container spacing={2}>
@@ -128,8 +128,8 @@ const ContactUs = () => {
             <Grid
               className="img-container"
               item
-              xs={12}
-              sm={6}
+              sm={12}
+              md={6}
               sx={{
                 backgroundImage: `url(${ContactUsImg})`,
                 backgroundPosition: "center",

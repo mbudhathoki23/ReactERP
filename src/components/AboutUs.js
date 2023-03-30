@@ -7,10 +7,14 @@ import TeamImg from "../assest/images/team.png";
 const AboutUs = () => {
   return (
     <AboutUsWrapper>
-      <Box className="about-us-section" sx={{ my: 0 }} id="About">
-        <Container>
-          <Grid container columnSpacing={3}>
-            <Grid item xs={12} sm={6}>
+      <Box className="about-us-section" sx={{ py: 3 }} id="About">
+        <Container maxWidth="xl" fixed>
+          <Grid
+            container
+            columnSpacing={3}
+            sx={{ xs: { flexDirection: "column-reverse" } }}
+          >
+            <Grid item sm={12} md={6}>
               <Box
                 className="img-container"
                 sx={{
@@ -21,7 +25,7 @@ const AboutUs = () => {
                 }}
               ></Box>
             </Grid>
-            <Grid item xs={12} sm={6} sx={{ pt: 8 }}>
+            <Grid item sm={12} md={6} sx={{ pt: { md: 6 } }}>
               <Box>
                 <Box sx={{ mb: 3 }}>
                   <Typography
@@ -31,7 +35,7 @@ const AboutUs = () => {
                   >
                     About Us
                   </Typography>
-                  <Typography className="about-description" sx={{pt:5}}>
+                  <Typography className="about-description" sx={{ pt: 5 }}>
                     The management software's robust reporting and analytics
                     capabilities provided us with detailed insights into our
                     financial performance, enabling us to quickly identify areas
@@ -39,7 +43,7 @@ const AboutUs = () => {
                     operations and increase profitability.
                   </Typography>
                 </Box>
-                <Grid container spacing={3} display='none'>
+                <Grid container spacing={3} display="none">
                   <Grid item sm={6}>
                     <Typography className="about-subtitle">
                       Where You Can Find Us

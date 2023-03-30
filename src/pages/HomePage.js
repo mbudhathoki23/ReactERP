@@ -1,11 +1,11 @@
 import React from "react";
 import Hero from "../components/Hero";
 import OurServices from "../components/OurServices";
-import Team from "../components/Team";
+// import Team from "../components/Team";
 import Enquiry from "../components/Enquiry";
-import Testimonial from "../components/Testimonial";
+// import Testimonial from "../components/Testimonial";
 import AboutUs from "../components/AboutUs";
-import ComingSoon from "../components/ComingSoon";
+// import ComingSoon from "../components/ComingSoon";
 
 const HomePage = () => {
   return (

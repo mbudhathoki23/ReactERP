@@ -16,7 +16,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { navLinks } from "../details/NavLinksDetails";
 import { Link } from "react-scroll";
-// import { scroller } from "react-scroll";
 
 const NavBars = () => {
   // Small Screen Menu List
@@ -51,9 +50,14 @@ const NavBars = () => {
       <Button
         key={index}
         onClick={handleCloseNavMenu}
-        sx={{ mx: 2, color: "black", display: "block", "&:hover": {
-          textDecoration:"none"
-        } }}
+        sx={{
+          mx: 2,
+          color: "black",
+          display: "block",
+          "&:hover": {
+            textDecoration: "none",
+          },
+        }}
         className="cButton"
         disableRipple
         disableFocusRipple
@@ -64,7 +68,7 @@ const NavBars = () => {
           to={link}
           className="cButton"
           spy={true}
-          offset={140}
+          offset={-122}
           duration={500}
           activeClass="active"
         >
@@ -80,7 +84,7 @@ const NavBars = () => {
       <>
         <Button
           key={index}
-          sx={{ mx: 2, color: "white", display: "block" }}
+          sx={{ mx: 2, color: "white", display: {md: "none", xl:"block"} }}
           className="cButton"
           id="basic-button"
           aria-controls={open ? "basic-menu" : undefined}
@@ -120,10 +124,10 @@ const NavBars = () => {
       </>
     ) : (
       // links without dropdown
-      <Link to={navlink} offset={-100} duration={500} activeClass="active">
+      <Link to={navlink} offset={-122} duration={500} activeClass="active">
         <Button
           key={index}
-          sx={{ mx: 2, color: "white", display: "block" }}
+          sx={{ mx: 2, color: "white",  display: {md: "none", xl:"block"} }}
           className="cButton"
           disableRipple
           disableFocusRipple
@@ -141,9 +145,9 @@ const NavBars = () => {
         <AppBar position="fixed" sx={{ py: 2 }} className="navbar-bg-color">
           <Container maxWidth="xl" fixed>
             <Toolbar>
-              {/* laege screen logo and name display */}
+              {/* large screen logo and name display */}
               <Box
-                sx={{ display: { xs: "none", md: "flex" } }}
+                sx={{ display: { xs: "none", xl: "flex" } }}
                 className="navigation-xl-display"
               >
                 <Box className="logo-name">
@@ -189,7 +193,7 @@ const NavBars = () => {
                 </Box>
               </Box>
               {/* small screen display */}
-              <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+              <Box sx={{ flexGrow: 1, display: {  md: "block", xl: "none" } }}>
                 <IconButton
                   size="large"
                   aria-label="account of current user"
@@ -216,7 +220,7 @@ const NavBars = () => {
                   open={Boolean(anchorElNav)}
                   onClose={handleCloseNavMenu}
                   sx={{
-                    display: { xs: "block", md: "none" },
+                    display: { md: "block", xl: "none" },
                   }}
                 >
                   {navBarLink}

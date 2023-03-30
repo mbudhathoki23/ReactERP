@@ -1,18 +1,6 @@
+@import url("https://fonts.cdnfonts.com/css/bookman-old-style");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-
-@font-face {
-  font-family: "Bookman Old Style";
-  src: url("https://fonts.cdnfonts.com/css/bookman-old-style");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Qm9va21hbiBPbGQgU3R5bGU=" !important;
-  /* font-family: "Bookman Old Style" !important; */
-}
 
 :root {
   /* primary   color*/
@@ -46,6 +34,16 @@
   --lite: rgba(255, 255, 255, 0.6);
   --primary: #002347;
   --secondary: #fdc632;
+
+  /* fontfamily */
+  --font-family: "Bookman Old Style", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family) !important;
 }
 
 p {
