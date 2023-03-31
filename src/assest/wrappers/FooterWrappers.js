@@ -77,7 +77,7 @@ const FooterWrapper = styled.section`
   }
   .footer-foot-link:hover {
     cursor: pointer;
-    color: var(--primary--800);
+    color: var(--quaternary-color);
   }
 `;
 export default FooterWrapper;

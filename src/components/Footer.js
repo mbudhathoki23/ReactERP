@@ -1,5 +1,12 @@
 import { Box, Container } from "@mui/system";
-import { Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
+import {
+  Button,
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from "@mui/material";
 import FooterWrapper from "../assest/wrappers/FooterWrappers";
 
 import { Link } from "react-scroll";
@@ -13,6 +20,7 @@ import OurServicesDetails from "../details/OurServicesDetails";
 
 // import icons
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const Footer = () => {
   const companyDetail = {
@@ -72,7 +80,13 @@ const Footer = () => {
                   {navLinks.map((link, index) => {
                     return (
                       <ListItem key={index} className="list-item-box">
-                        <Link to={link} className="list-items" offset={-122} duration={500} activeClass="active">
+                        <Link
+                          to={link}
+                          className="list-items"
+                          offset={-122}
+                          duration={500}
+                          activeClass="active"
+                        >
                           {link}
                         </Link>
                       </ListItem>
@@ -125,7 +139,7 @@ const Footer = () => {
                       </Typography>
                     </ListItem>
                     <ListItem className="list-item-box">
-                      <Typography className="list-items">
+                      <Typography className="list-ite ms">
                         {companyDetail.alternatePhone}
                       </Typography>
                     </ListItem>
@@ -135,6 +149,27 @@ const Footer = () => {
                       </Typography>
                     </ListItem>
                   </List>
+                  <Link
+                    to="Home"
+                    offset={-122}
+                    duration={10}
+                    activeClass="active"
+                  >
+                    <Button
+                      sx={{
+                        backgroundColor: "white",
+                        color: "black",
+                        width: "fit-content",
+                        marginLeft: 30,
+                        "&:hover": {
+                          color: "white",
+                          backgroundColor: "black",
+                        },
+                      }}
+                    >
+                      <ArrowUpwardIcon />
+                    </Button>
+                  </Link>
                 </Box>
               </Grid>
             </Grid>
