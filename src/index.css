@@ -116,6 +116,17 @@ li {
   font-size: 1.2rem !important;
 }
 
+.upgrading-text {
+  color: red;
+  text-align: center;
+  margin: 10px 0 !important;
+  user-select: none;
+}
+.upgrading-text:hover {
+  color: red;
+  cursor: pointer;
+}
+
 /* p,
 h1,
 h2,

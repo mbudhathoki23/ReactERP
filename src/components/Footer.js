@@ -139,7 +139,7 @@ const Footer = () => {
                       </Typography>
                     </ListItem>
                     <ListItem className="list-item-box">
-                      <Typography className="list-ite ms">
+                      <Typography className="list-items">
                         {companyDetail.alternatePhone}
                       </Typography>
                     </ListItem>

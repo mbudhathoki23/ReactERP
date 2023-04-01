@@ -13,7 +13,7 @@ const OurPortfolio = () => {
   const responsiveCarousel = {
     xxl: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 4,
     },
     xl: {
       breakpoint: { max: 3000, min: 1024 },
@@ -21,7 +21,7 @@ const OurPortfolio = () => {
     },
     md: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     sm: {
       breakpoint: { max: 464, min: 0 },
@@ -30,7 +30,7 @@ const OurPortfolio = () => {
   };
 
   const portfolioDisplay = PortFolio.map((details, index) => {
-    const { name, img, email, facebook, linkedin } = details;
+    const { name, img, email, facebook, linkedin, profession } = details;
     return (
       <Box
         key={index}
@@ -43,9 +43,15 @@ const OurPortfolio = () => {
             variant="overline"
             gutterBottom={false}
             fontWeight={600}
-            color="#8b5cf6"
+            color="white"
+            sx={{ lineHeight: 1.2 }}
           >
             {name}
+            <Box>
+              <Typography variant="body1" sx={{ py: 3, color: "white" }}>
+                {profession}
+              </Typography>
+            </Box>
           </Typography>
           <Box
             className="contact-links"
@@ -100,13 +106,15 @@ const OurPortfolio = () => {
           >
             Transforming ideas into reality with our personals.
           </Typography>
-
+          <Typography variant="body1" textTransform="uppercase" className="upgrading-text">
+            We are still upgrading!!!
+          </Typography>
           <Carousel
             responsive={responsiveCarousel}
             showDots={false}
             arrows={true}
-            // autoPlay={true}
-            // autoPlaySpeed={7000}
+            autoPlay={true}
+            autoPlaySpeed={7000}
             partialVisbile={true}
             customTransition="all 2s ease-in-out"
             draggable

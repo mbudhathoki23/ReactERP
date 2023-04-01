@@ -19,7 +19,18 @@ const FooterWrapper = styled.section`
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--secondary-color);
+    position: relative;
   }
+
+  /* .footer-list-title::after {
+    content: "";
+    width: 45%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+  } */
 
   .description-what-do {
     color: var(--secondary-color);
@@ -47,6 +58,7 @@ const FooterWrapper = styled.section`
     width: fit-content;
     padding-top: 0px;
     padding-bottom: 0px;
+    /* text-align: center; */
   }
 
   .list-items {
@@ -61,8 +73,6 @@ const FooterWrapper = styled.section`
     cursor: pointer;
   }
   .list-items:hover {
-    /* color: var(--primary--700); */
-    /* color: var(--primary-color); */
     color: var(--quaternary-color);
   }
 
