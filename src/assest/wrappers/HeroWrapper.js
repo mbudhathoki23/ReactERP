@@ -9,8 +9,8 @@ const HeroWrapper = styled.section`
     font-size: 52px;
     font-weight: 600;
     line-height: 100%;
-    color: white;
-    text-shadow: 0px 0px 10px var(--primary--300);
+    color: var(--tertiary-color);
+    /* text-shadow: 0px 0px 10px var(--primary--300); */
   }
   .description {
     color: var(--tertiary-color);

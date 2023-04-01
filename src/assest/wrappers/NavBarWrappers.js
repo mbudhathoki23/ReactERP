@@ -19,6 +19,9 @@ const Wrapper = styled.nav`
   .img-container {
     width: 90px;
     height: 90px;
+    background: var(--primary--200);
+    outline: 2px solid var(--primary--200);
+    border-radius: 100%;
   }
 
   .company-logo-name {

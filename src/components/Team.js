@@ -48,7 +48,10 @@ const OurPortfolio = () => {
           >
             {name}
             <Box>
-              <Typography variant="body1" sx={{ py: 3, color: "white" }}>
+              <Typography
+                variant="body1"
+                sx={{ py: 3, color: "white", fontStyle: "italic" }}
+              >
                 {profession}
               </Typography>
             </Box>
@@ -106,7 +109,11 @@ const OurPortfolio = () => {
           >
             Transforming ideas into reality with our personals.
           </Typography>
-          <Typography variant="body1" textTransform="uppercase" className="upgrading-text">
+          <Typography
+            variant="body1"
+            textTransform="uppercase"
+            className="upgrading-text"
+          >
             We are still upgrading!!!
           </Typography>
           <Carousel
@@ -120,7 +127,7 @@ const OurPortfolio = () => {
             draggable
             focusOnSelect={true}
             slidesToSlide={1}
-            pauseOnHover
+            pauseOnHover={true}
             shouldResetAutoplay
             minimumTouchDrag={80}
             rtl={false}

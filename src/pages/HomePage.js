@@ -4,6 +4,8 @@ import OurServices from "../components/OurServices";
 import Enquiry from "../components/Enquiry";
 import AboutUs from "../components/AboutUs";
 import Team from "../components/Team";
+import Support from "../components/Support";
+import Products from "../components/Products";
 // import Testimonial from "../components/Testimonial";
 // import ComingSoon from "../components/ComingSoon";
 
@@ -14,7 +16,10 @@ const HomePage = () => {
       <OurServices />
       <AboutUs />
       <Enquiry />
+      <Support />
       <Team />
+      <Products />
+
       {/* <ComingSoon />
       <Testimonial /> */}
     </>

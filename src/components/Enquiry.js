@@ -115,13 +115,13 @@ const ContactUs = () => {
                 <Button
                   variant="contained"
                   endIcon={<SendIcon />}
-                  sx={{ mt: 3 }}
+                  sx={{ mt: 3, }}
                   className="cButton"
                   fullWidth
                   type="submit"
                   onClick={sendMail}
                 >
-                  <Typography variant="body1">Submit Message</Typography>
+                  <Typography fontSize={18} fontWeight={500}>Submit Message</Typography>
                 </Button>
               </Box>
             </Grid>

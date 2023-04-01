@@ -24,6 +24,7 @@ const Wrapper = styled.section`
     z-index: 0;
     transition: all 1.2s linear;
     border-radius: 20px;
+    cursor: grab;
   }
 
   .carousel_item::before {
@@ -94,7 +95,7 @@ const Wrapper = styled.section`
   }
 
   .portfolio-icon:hover {
-    color: var(--primary--600);
+    color: var(--primary--200);
   }
 
   .contact-links {

@@ -11,20 +11,25 @@ const Particle = () => {
   return (
     <>
       <Particles
+      height="200px"
         id="hero-section-particle"
         init={particlesInit}
         options={{
+          background: {
+            zIndex: -10,
+          },
+          fullScreen: false,
           fpsLimit: 120,
           interactivity: {
             events: {
               onHover: {
                 enable: true,
                 mode: "repulse",
-                parallax:{
-                    enable: false,
-                    force: 2,
-                    smooth: 10
-                }
+                parallax: {
+                  enable: false,
+                  force: 2,
+                  smooth: 10,
+                },
               },
               resize: true,
             },
@@ -83,7 +88,6 @@ const Particle = () => {
           detectRetina: true,
         }}
       />
-
     </>
   );
 };

@@ -15,7 +15,7 @@ import { Container } from "@mui/system";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { navLinks } from "../details/NavLinksDetails";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBars = () => {
   // Small Screen Menu List
@@ -47,7 +47,7 @@ const NavBars = () => {
   // navbar for small screens
   const navBarLink = navLinks.map((link, index) => {
     return (
-      <Link
+      <ScrollLink
         key={index}
         to={link}
         className="cButton"
@@ -73,7 +73,7 @@ const NavBars = () => {
         >
           {link}
         </Button>
-      </Link>
+      </ScrollLink>
     );
   });
 
@@ -109,7 +109,7 @@ const NavBars = () => {
           {videoLinksTypes.map((link, i) => {
             return (
               <MenuItem
-                component={Link}
+                component={ScrollLink}
                 key={i}
                 to={link}
                 sx={{ fontSize: 18 }}
@@ -123,7 +123,12 @@ const NavBars = () => {
       </>
     ) : (
       // links without dropdown
-      <Link to={navlink} offset={-122} duration={500} activeClass="active">
+      <ScrollLink
+        to={navlink}
+        offset={-122}
+        duration={500}
+        activeClass="active"
+      >
         <Button
           key={index}
           sx={{ mx: 2, color: "white", display: { md: "none", xl: "block" } }}
@@ -134,7 +139,7 @@ const NavBars = () => {
         >
           {navlink}
         </Button>
-      </Link>
+      </ScrollLink>
     )
   );
 

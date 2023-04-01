@@ -10,7 +10,7 @@ const AboutUsWrapper = styled.section`
   }
 
   .about-description {
-    color: var(--primary--600);
+    color: var(--tertiary-color);
   }
 
   @media (max-width: 600px) {
