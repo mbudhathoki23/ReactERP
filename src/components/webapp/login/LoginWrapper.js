@@ -36,7 +36,10 @@ const LoginWrapper = styled.section`
   .text {
     color: var(--primary--800);
   }
-
+  .card-style {
+    display: flex;
+    flex-direction: column;
+  }
   .card-header {
     text-align: center;
     font-size: 18px;

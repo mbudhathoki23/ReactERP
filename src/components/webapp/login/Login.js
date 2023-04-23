@@ -82,7 +82,6 @@ const Login = () => {
               <Box className="login-section-box">
                 <Card sx={{ py: 3, px: 2 }} className="card-style">
                   <CardHeader className="card-header" title="Log In" />
-
                   <FormControl sx={{ pb: 3 }} width="100%">
                     <FormLabel required className="text">
                       User Name
@@ -130,7 +129,6 @@ const Login = () => {
                       )}
                     </span>
                   </FormControl>
-
                   <Button
                     variant="contained"
                     className="action-btn"

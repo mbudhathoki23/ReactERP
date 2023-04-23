@@ -19,7 +19,7 @@ const MyRoutes = () => {
   return (
     <>
       <BrowserRouter onContextMenu={handleContextMenu}>
-        <NavBars />
+        {/* <NavBars /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contactUs" element={<ComingSoon />} />
@@ -29,7 +29,7 @@ const MyRoutes = () => {
             <Route path="/login" element={<Login />} />
           </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );
