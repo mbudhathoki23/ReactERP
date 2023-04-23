@@ -4,9 +4,9 @@ import React from "react";
 import ComingSoonWrapper from "./ComingSoonWrapper";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import Particles from "../configs/particles/Particle";
-import Counter from "../configs/counter/Counter";
-import { featuresOffered, softwares } from "../../details/FeaturesOffered";
+import Particles from "../../configs/particles/Particle";
+import Counter from "../../configs/counter/Counter";
+import { featuresOffered, softwares } from "../../../details/FeaturesOffered";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 // image import

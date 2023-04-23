@@ -15,9 +15,9 @@ import { Link } from "react-scroll";
 import MrSolution from "../../assest/images/MrLogo.ico";
 
 // details import
-import { navLinks } from "../../details/NavLinksDetails";
-import SocialLinks from "../../details/SocialLinks";
-import OurServicesDetails from "../../details/OurServicesDetails";
+import { navLinks } from "../../../details/NavLinksDetails";
+import SocialLinks from "../../../details/SocialLinks";
+import OurServicesDetails from "../../../details/OurServicesDetails";
 
 // import icons
 import CopyrightIcon from "@mui/icons-material/Copyright";

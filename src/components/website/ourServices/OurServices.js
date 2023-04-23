@@ -2,7 +2,7 @@ import { Typography, Box, Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import Wrapper from "./OurServicesWrapper";
-import OurServicesDetails from "../../details/OurServicesDetails";
+import OurServicesDetails from "../../../details/OurServicesDetails";
 
 const OurServices = () => {
   return (

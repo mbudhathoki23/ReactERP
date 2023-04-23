@@ -13,7 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { softwares } from "../../details/FeaturesOffered";
+import { softwares } from "../../../details/FeaturesOffered";
 import ProductsWrapper from "./ProductsWrapper";
 import ComingSoon from "../comingSoon/ComingSoon";
 // import Particle from "./configs/particles/Particle";

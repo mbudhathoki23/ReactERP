@@ -19,7 +19,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 // import { navLinks } from "../details/NavLinksDetails";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouteLink } from "react-router-dom";
-import { OtherSolutions, ERPsolutions } from "../../details/NavLinksDetails";
+import { OtherSolutions, ERPsolutions } from "../../../details/NavLinksDetails";
 
 // image import
 import Mrsolution from "../../assest/images/MrSolution.png";

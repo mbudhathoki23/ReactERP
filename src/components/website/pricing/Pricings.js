@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import PricingWrapper from "./PricingsWrapper";
-import pricingsDetails from "../../details/PricingsDetail";
+import pricingsDetails from "../../../details/PricingsDetail";
 import {Link as RouteLink} from "react-router-dom"
 
 const Pricings = () => {

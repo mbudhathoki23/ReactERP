@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // components import
-import NavBars from "./components/navbar/NavBars";
-import Footer from "./components/footer/Footer";
-import Products from "./components/products/Products";
-import ComingSoon from "./components/comingSoon/ComingSoon";
+import NavBars from "./components/website/navbar/NavBars";
+import Footer from "./components/website/footer/Footer";
+import Products from "./components/website/products/Products";
+import ComingSoon from "./components/website/comingSoon/ComingSoon";
 
 // pages import
 import HomePage from "./pages/HomePage";
