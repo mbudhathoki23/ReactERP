@@ -10,7 +10,7 @@ const Wrapper = styled.section`
     color: var(--primary--800);
   }
   .our-portfolio-section {
-    background-color: var(--primary--200);
+    background-color: var(--primary--300);
   }
 
   .carousel_item {

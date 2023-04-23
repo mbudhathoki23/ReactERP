@@ -7,16 +7,17 @@ import {
   ListItemText,
   Typography,
 } from "@mui/material";
-import FooterWrapper from "../assest/wrappers/FooterWrappers";
+import FooterWrapper from "./FooterWrappers";
 
 import { Link } from "react-scroll";
 
-import MrSolution from "../assest/images/MrLogo.ico";
+// img imports
+import MrSolution from "../../assest/images/MrLogo.ico";
 
-// details exports
-import { navLinks } from "../details/NavLinksDetails";
-import SocialLinks from "../details/SocialLinks";
-import OurServicesDetails from "../details/OurServicesDetails";
+// details import
+import { navLinks } from "../../details/NavLinksDetails";
+import SocialLinks from "../../details/SocialLinks";
+import OurServicesDetails from "../../details/OurServicesDetails";
 
 // import icons
 import CopyrightIcon from "@mui/icons-material/Copyright";
@@ -157,10 +158,12 @@ const Footer = () => {
                   >
                     <Button
                       sx={{
+                        height:"60px",
                         backgroundColor: "white",
                         color: "black",
                         width: "fit-content",
                         marginLeft: 30,
+                        borderRadius:"100%",
                         "&:hover": {
                           color: "white",
                           backgroundColor: "black",

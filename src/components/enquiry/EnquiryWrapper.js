@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.nav`
   .contact-us-section {
-    background-color: var(--primary--300);
+    background-color: var(--primary--200);
   }
   .cWidth {
     width: 100%;
@@ -22,14 +22,13 @@ const Wrapper = styled.nav`
   .img-container {
     width: 100%;
     height: 400px;
-    /* margin-top: -145px; */
   }
 
   .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-    border-color: var(--secondary-color);
+    border-color: white;
   }
   .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-    border-color: var(--secondary-color);
+    border-color: black;
   }
   .MuiInputLabel-root.Mui-focused {
     color: var(--tertairy-color);

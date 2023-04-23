@@ -72,6 +72,17 @@ const Wrapper = styled.nav`
     width: 100%;
   }
 
+  .product-list {
+    display: flex;
+    flex-direction: row !important;
+    width: 100% !important;
+  }
+
+  
+
+  .css-3bmhjh-MuiPaper-root-MuiPopover-paper{
+    width: 700px !important;
+  }
   /* material ui universal class  */
   /* .css-6hp17o-MuiList-root-MuiMenu-list {
     background-color: red;

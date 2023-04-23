@@ -13,8 +13,9 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { softwares } from "../details/FeaturesOffered";
-import ProductsWrapper from "../assest/wrappers/ProductsWrapper";
+import { softwares } from "../../details/FeaturesOffered";
+import ProductsWrapper from "./ProductsWrapper";
+import ComingSoon from "../comingSoon/ComingSoon";
 // import Particle from "./configs/particles/Particle";
 
 const softwareList = softwares.map((software, index) => {
@@ -77,11 +78,12 @@ const softwareList = softwares.map((software, index) => {
 const Products = () => {
   return (
     <ProductsWrapper>
+      <ComingSoon />
       <Box>
         {/* <Particle /> */}
-        <Container maxWidth="xl" fixed>
+        {/* <Container maxWidth="xl" fixed>
           <List className="list-container">{softwareList}</List>
-        </Container>
+        </Container> */}
       </Box>
     </ProductsWrapper>
   );

@@ -3,8 +3,8 @@ import { Box, Container } from "@mui/system";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import TestimonialWrapper from "../assest/wrappers/TestimonialWrapper";
-import Testimonials from "../details/TestimonialDetails";
+import TestimonialWrapper from "./TestimonialWrapper";
+import Testimonials from "../../details/TestimonialDetails";
 
 const Testimonial = () => {
   const responsiveCarousel = {

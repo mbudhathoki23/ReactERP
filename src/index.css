@@ -133,6 +133,20 @@ li {
   cursor: pointer;
 }
 
+.depricated-text{
+  font-size: .8rem;
+}
+
+.ani-list:hover {
+  transition: all 200ms;
+  transform: translateX(5px);
+}
+
+.border-bottom{
+  border-bottom: 2px solid var(--primary--900) !important;
+}
+
+
 /* p,
 h1,
 h2,

@@ -1,15 +1,17 @@
 import { Card, Grid, Link, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
-import ComingSoonWrapper from "../assest/wrappers/ComingSoonWrapper";
+import ComingSoonWrapper from "./ComingSoonWrapper";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import MrSolution from "../assest/images/MrSolution.png";
-import Particles from "./configs/particles/Particle";
-import Counter from "./configs/counter/Counter";
-import { featuresOffered, softwares } from "../details/FeaturesOffered";
+import Particles from "../configs/particles/Particle";
+import Counter from "../configs/counter/Counter";
+import { featuresOffered, softwares } from "../../details/FeaturesOffered";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import QrCode from "../assest/images/qrcode.png";
+
+// image import
+import MrSolution from "../../assest/images/MrSolution.png";
+import QrCode from "../../assest/images/qrcode.png";
 
 const ComingSoon = () => {
   // company details

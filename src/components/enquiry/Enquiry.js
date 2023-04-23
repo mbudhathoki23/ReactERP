@@ -11,9 +11,12 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
-import Wrapper from "../assest/wrappers/EnquiryWrapper";
+import Wrapper from "./EnquiryWrapper";
+
+// icon import
 import SendIcon from "@mui/icons-material/Send";
-import ContactUsImg from "../assest/images/Contact-us.png";
+// image import
+import ContactUsImg from "../../assest/images/Contact-us.png";
 
 const ContactUs = () => {
   const [messageSubject, setMessageSubject] = useState("");

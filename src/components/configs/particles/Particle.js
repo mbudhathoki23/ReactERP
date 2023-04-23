@@ -18,7 +18,7 @@ const Particle = () => {
           background: {
             zIndex: -10,
           },
-          fullScreen: false,
+          // fullScreen: false,
           fpsLimit: 120,
           interactivity: {
             events: {

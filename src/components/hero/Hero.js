@@ -1,8 +1,10 @@
 import { Button, ButtonGroup, Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
-import HeroWrapper from "../assest/wrappers/HeroWrapper";
-import HeroImg from "../assest/images/HeroSection.jpg";
+import HeroWrapper from "./HeroWrapper";
+
+// image import
+import HeroImg from "../../assest/images/HeroSection.jpg";
 // import Particle from "./configs/particles/Particle";
 
 const Hero = () => {

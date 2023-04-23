@@ -1,8 +1,8 @@
 import { Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
-import AboutUsWrapper from "../assest/wrappers/AboutUsWrapper";
-import TeamImg from "../assest/images/team.png";
+import AboutUsWrapper from "./AboutUsWrapper";
+import TeamImg from "../../assest/images/team.png";
 
 const AboutUs = () => {
   return (
