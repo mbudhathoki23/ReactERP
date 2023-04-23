@@ -10,6 +10,7 @@ import ComingSoon from "./components/website/comingSoon/ComingSoon";
 // pages import
 import HomePage from "./pages/websitepages/HomePage";
 import PricingsPage from "./pages/websitepages/PricingsPage";
+import Login from "./components/webapp/login/Login";
 
 const MyRoutes = () => {
   const handleContextMenu = (event) => {
@@ -24,6 +25,9 @@ const MyRoutes = () => {
           <Route path="/contactUs" element={<ComingSoon />} />
           <Route path="/products" element={<Products />} />
           <Route path="/pricings" element={<PricingsPage />} />
+          <Route>
+            <Route path="/login" element={<Login />} />
+          </Route>
         </Routes>
         <Footer />
       </BrowserRouter>
