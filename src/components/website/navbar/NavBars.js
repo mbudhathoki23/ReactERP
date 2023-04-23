@@ -22,8 +22,9 @@ import { Link as RouteLink } from "react-router-dom";
 import { OtherSolutions, ERPsolutions } from "../../../details/NavLinksDetails";
 
 // image import
-import Mrsolution from "../../assest/images/MrSolution.png";
-import { Translate } from "@mui/icons-material";
+import Mrsolution from "../../../assest/images/MrSolution.png";
+
+// import { Translate } from "@mui/icons-material";
 
 const NavBars = () => {
   // Small Screen Menu List

@@ -10,8 +10,8 @@ import { featuresOffered, softwares } from "../../../details/FeaturesOffered";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 // image import
-import MrSolution from "../../assest/images/MrSolution.png";
-import QrCode from "../../assest/images/qrcode.png";
+import MrSolution from "../../../assest/images/MrSolution.png";
+import QrCode from "../../../assest/images/qrcode.png";
 
 const ComingSoon = () => {
   // company details

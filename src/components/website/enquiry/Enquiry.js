@@ -16,7 +16,7 @@ import Wrapper from "./EnquiryWrapper";
 // icon import
 import SendIcon from "@mui/icons-material/Send";
 // image import
-import ContactUsImg from "../../assest/images/Contact-us.png";
+import ContactUsImg from "../../../assest/images/Contact-us.png";
 
 const ContactUs = () => {
   const [messageSubject, setMessageSubject] = useState("");

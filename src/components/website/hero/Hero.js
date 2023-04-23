@@ -4,7 +4,7 @@ import React from "react";
 import HeroWrapper from "./HeroWrapper";
 
 // image import
-import HeroImg from "../../assest/images/HeroSection.jpg";
+import HeroImg from "../../../assest/images/HeroSection.jpg";
 // import Particle from "./configs/particles/Particle";
 
 const Hero = () => {

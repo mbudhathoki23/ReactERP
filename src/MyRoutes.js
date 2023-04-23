@@ -8,8 +8,8 @@ import Products from "./components/website/products/Products";
 import ComingSoon from "./components/website/comingSoon/ComingSoon";
 
 // pages import
-import HomePage from "./pages/HomePage";
-import PricingsPage from "./pages/PricingsPage";
+import HomePage from "./pages/websitepages/HomePage";
+import PricingsPage from "./pages/websitepages/PricingsPage";
 
 const MyRoutes = () => {
   const handleContextMenu = (event) => {

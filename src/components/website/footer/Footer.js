@@ -12,7 +12,7 @@ import FooterWrapper from "./FooterWrappers";
 import { Link } from "react-scroll";
 
 // img imports
-import MrSolution from "../../assest/images/MrLogo.ico";
+import MrSolution from "../../../assest/images/MrLogo.ico";
 
 // details import
 import { navLinks } from "../../../details/NavLinksDetails";

@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Typography, Container, Link } from "@mui/material";
 import { Box } from "@mui/system";
-import PortFolio from "../../details/TeamDetails";
+import PortFolio from "../../../details/TeamDetails";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";

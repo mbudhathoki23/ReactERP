@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 const SupportWrapper = styled.section`
-
 background-color: var(--primary--300);
 
-  .component-text {
+.component-text {
     text-align: center;
     line-height: 1.5rem;
     margin: 20px 0;
@@ -26,7 +25,7 @@ background-color: var(--primary--300);
     display:flex;
     flex-direction : column;
     align-items:center
-    justify-content:center;
+    justify-content: center;
     margin: 1.2rem 0;
     height: 220px;
   }
@@ -108,8 +107,6 @@ background-color: var(--primary--300);
             transform: translateX(-8px) translateY(-8px);
   }
 }
-
-
 `;
 
 export default SupportWrapper;
