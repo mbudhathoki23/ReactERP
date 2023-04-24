@@ -51,7 +51,7 @@ const Login = () => {
     const { icon, name } = software;
     return (
       <Typography
-        className="software-list"
+        className="software-list ani-list"
         key={i}
         sx={{ marginLeft: 5, textTransform: "capitalize" }}
       >
@@ -78,7 +78,7 @@ const Login = () => {
               </Card>
             </Grid>
             {/* login section */}
-            <Grid item className="login-section" xs={4}>
+            <Grid item className="login-section" xs={6}>
               <Box className="login-section-box">
                 <Card sx={{ py: 3, px: 2 }} className="card-style">
                   <CardHeader className="card-header" title="Log In" />

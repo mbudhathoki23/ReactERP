@@ -27,18 +27,17 @@ const LoginWrapper = styled.section`
   }
 
   .login-section {
-    display: grid;
+    display: flex;
+    justify-content: center;
   }
-  .login-section-box {
-    /* display: flex;
-    justify-content: center; */
-  }
+  
   .text {
     color: var(--primary--800);
   }
   .card-style {
     display: flex;
     flex-direction: column;
+    width: 500px;
   }
   .card-header {
     text-align: center;
