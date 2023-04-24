@@ -137,9 +137,16 @@ li {
   font-size: .8rem;
 }
 
+.ani-list{
+  font-size: 1rem !important;
+}
 .ani-list:hover {
   transition: all 200ms;
   transform: translateX(5px);
+}
+
+.css-3bmhjh-MuiPaper-root-MuiPopover-paper{
+  width: 80%;
 }
 
 .border-bottom{
