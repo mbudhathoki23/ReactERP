@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // components import
-import NavBars from "./components/website/navbar/NavBars";
-import Footer from "./components/website/footer/Footer";
 import Products from "./components/website/products/Products";
 import ComingSoon from "./components/website/comingSoon/ComingSoon";
 
@@ -11,6 +9,7 @@ import ComingSoon from "./components/website/comingSoon/ComingSoon";
 import HomePage from "./pages/websitepages/HomePage";
 import PricingsPage from "./pages/websitepages/PricingsPage";
 import Login from "./components/webapp/login/Login";
+import Dashboard from "./components/webapp/dashboard/Dashboard";
 
 const MyRoutes = () => {
   const handleContextMenu = (event) => {
@@ -19,7 +18,6 @@ const MyRoutes = () => {
   return (
     <>
       <BrowserRouter onContextMenu={handleContextMenu}>
-        {/* <NavBars /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contactUs" element={<ComingSoon />} />
@@ -27,9 +25,9 @@ const MyRoutes = () => {
           <Route path="/pricings" element={<PricingsPage />} />
           <Route>
             <Route path="/login" element={<Login />} />
+            <Route path="/login/dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
-        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );
