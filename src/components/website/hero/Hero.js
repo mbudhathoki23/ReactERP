@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <HeroWrapper>
       {/* <Particle /> */}
-      <Box className="hero-section-container" id="Home" sx={{ py: 5 }}>
+      <Box className="hero-section-container" id="Hero" sx={{ py: 5 }}>
         <Container className="hero-section" maxWidth="xl" fixed>
           <Grid
             container

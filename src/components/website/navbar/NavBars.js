@@ -122,7 +122,12 @@ const NavBars = () => {
                   }}
                   className="links-display"
                 >
-                  <RouteLink to="/#Hero">
+                  <ScrollLink
+                    offset={-122}
+                    duration={15000}
+                    activeClass="active"
+                    to="Hero"
+                  >
                     <Button
                       sx={{
                         mx: 2,
@@ -136,7 +141,7 @@ const NavBars = () => {
                     >
                       Home
                     </Button>
-                  </RouteLink>
+                  </ScrollLink>
                   {/* <>
                     <Button
                       sx={{

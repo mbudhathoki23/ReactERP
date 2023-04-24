@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const PricingWrapper = styled.section`
-  background-color: var(--primary--200);
+  background-color: var(--primary--300);
   user-select: none;
   .price-card {
     background-color: var(--primary--500);

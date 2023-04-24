@@ -133,8 +133,8 @@ li {
   cursor: pointer;
 }
 
-.depricated-text{
-  font-size: .8rem;
+.depricated-text {
+  font-size: 0.8rem;
 }
 
 .ani-list:hover {
@@ -142,10 +142,21 @@ li {
   transform: translateX(5px);
 }
 
-.border-bottom{
+.border-bottom {
   border-bottom: 2px solid var(--primary--900) !important;
 }
 
+button.action-btn {
+  background-color: var(--primary--700);
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+button.action-btn:hover {
+  background-color: var(--primary--200);
+  color: var(--primar);
+  border: 1px solid var(--primary--500);
+}
 
 /* p,
 h1,
