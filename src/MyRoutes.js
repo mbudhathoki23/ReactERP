@@ -24,6 +24,8 @@ const MyRoutes = () => {
           <Route path="/contactUs" element={<ComingSoon />} />
           <Route path="/products" element={<Products />} />
           <Route path="/pricings" element={<PricingsPage />} />
+          <Route path="/pricings" element={<PricingsPage />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>
